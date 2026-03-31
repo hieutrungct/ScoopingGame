@@ -9,7 +9,8 @@ using UnityEngine;
         public ArcadeLeverRotate joystick;
         public BlindBag blindBagPrefab;
         [SerializeField] private Transform blindBagSpawnPoint;
-        [SerializeField] private CatchZone catchZone;
+        public CatchZone catchZone;
+        public Spoon spoon;
         public float clawMoveSpeed;
         public float powerTime;
         public float gameTime;
@@ -42,7 +43,7 @@ using UnityEngine;
                 DestroyImmediate(blindBagSpawnPoint.GetChild(i).gameObject);
             }
             yield return null;
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < 50; i++)
             {
                 float randomOffsetX = Random.Range(-0.5f, 0.5f);    
                 Vector3 spawnPos = blindBagSpawnPoint.position + new Vector3(randomOffsetX, 0, 0);
