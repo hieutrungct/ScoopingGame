@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: 04f92ae10c811ac4c86b977635eb0ec3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7370561001073344868
+    second: den1 1_0
+  - first:
+      213: -2889699709102086945
+    second: den1 1_1
+  - first:
+      213: -2624033150240017859
+    second: den1 1_2
+  - first:
+      213: -1386930327218390762
+    second: den1 1_3
+  - first:
+      213: 3299742468333495513
+    second: den1 1_4
+  - first:
+      213: -1377171454102569863
+    second: den1 1_5
+  - first:
+      213: -7702164306814323888
+    second: den1 1_6
+  - first:
+      213: 1768713313577876526
+    second: den1 1_7
+  - first:
+      213: -403901525760471021
+    second: den1 1_8
+  - first:
+      213: -9029481687566111738
+    second: den1 1_9
+  - first:
+      213: 4840098308371367154
+    second: den1 1_10
+  - first:
+      213: -1772576636281952195
+    second: den1 1_11
+  - first:
+      213: -3970566238968888877
+    second: den1 1_12
+  - first:
+      213: 5302489439146642581
+    second: den1 1_13
+  - first:
+      213: -7274470571341537157
+    second: den1 1_14
+  - first:
+      213: 5287798262822643383
+    second: den1 1_15
+  - first:
+      213: 6722570996073144954
+    second: den1 1_16
+  - first:
+      213: 9102518665634200478
+    second: den1 1_17
+  - first:
+      213: 8323262129772652091
+    second: den1 1_18
+  - first:
+      213: 5737248020366900023
+    second: den1 1_19
+  - first:
+      213: -7285508930528648645
+    second: den1 1_20
+  - first:
+      213: 2582133351657405637
+    second: den1 1_21
+  - first:
+      213: -884361984788061068
+    second: den1 1_22
+  - first:
+      213: 6263300646538263161
+    second: den1 1_23
+  - first:
+      213: -5846180637334317873
+    second: den1 1_24
+  - first:
+      213: -381845240346536216
+    second: den1 1_25
+  - first:
+      213: -9029099906303854686
+    second: den1 1_26
+  - first:
+      213: -711108059437994403
+    second: den1 1_27
+  - first:
+      213: -1959788580076391488
+    second: den1 1_28
+  - first:
+      213: -5756557612766264439
+    second: den1 1_29
+  - first:
+      213: -3954881093636232951
+    second: den1 1_30
+  - first:
+      213: -123380599474858419
+    second: den1 1_31
+  - first:
+      213: 2279108507928867461
+    second: den1 1_32
+  - first:
+      213: -7045753968897853259
+    second: den1 1_33
+  - first:
+      213: -5187902880683557830
+    second: den1 1_34
+  - first:
+      213: -5150865382040163680
+    second: den1 1_35
+  - first:
+      213: 3741399272391718226
+    second: den1 1_36
+  - first:
+      213: -9111300324194533059
+    second: den1 1_37
+  - first:
+      213: -3721817202943380817
+    second: den1 1_38
+  - first:
+      213: 6940967507990212383
+    second: den1 1_39
+  - first:
+      213: 4733844024309252066
+    second: den1 1_40
+  - first:
+      213: 345989319432903388
+    second: den1 1_41
+  - first:
+      213: -3570219465483392764
+    second: den1 1_42
+  - first:
+      213: 3185326972720513161
+    second: den1 1_43
+  - first:
+      213: -3026459662258536234
+    second: den1 1_44
+  - first:
+      213: 8503661534911680715
+    second: den1 1_45
+  - first:
+      213: -5035583653941234303
+    second: den1 1_46
+  - first:
+      213: -6017864259355686620
+    second: den1 1_47
+  - first:
+      213: -8801685080484375661
+    second: den1 1_48
+  - first:
+      213: 1105815952165819086
+    second: den1 1_49
+  - first:
+      213: 5294338955692394674
+    second: den1 1_50
+  - first:
+      213: 8197291783568282783
+    second: den1 1_51
+  - first:
+      213: -7339760796121019614
+    second: den1 1_52
+  - first:
+      213: -2388187449961156564
+    second: den1 1_53
+  - first:
+      213: -2797761079405229774
+    second: den1 1_54
+  - first:
+      213: -85562861701395980
+    second: den1 1_55
+  - first:
+      213: 495728050125513217
+    second: den1 1_56
+  - first:
+      213: 1195744241685229356
+    second: den1 1_57
+  - first:
+      213: -7381370796820317117
+    second: den1 1_58
+  - first:
+      213: -688303453539376633
+    second: den1 1_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: den1 1_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 140
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9efca702d186b990800000000000000
+      internalID: -7370561001073344868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4ab63cc69b5e7d0800000000000000
+      internalID: -2889699709102086945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_2
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d323819a0cf859bd0800000000000000
+      internalID: -2624033150240017859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6197ee53732a0cce0800000000000000
+      internalID: -1386930327218390762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4e94bca4a0bcd20800000000000000
+      internalID: 3299742468333495513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_5
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c786bebdd43ece0800000000000000
+      internalID: -1377171454102569863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 053b3aaee5a6c1590800000000000000
+      internalID: -7702164306814323888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_7
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2c305d336bbb8810800000000000000
+      internalID: 1768713313577876526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_8
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3101fc8c3bd056af0800000000000000
+      internalID: -403901525760471021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_9
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c2ab2de36d0b280800000000000000
+      internalID: -9029481687566111738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_10
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f4c17c74cb7b2340800000000000000
+      internalID: 4840098308371367154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_11
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38e149d0fa8667e0800000000000000
+      internalID: -1772576636281952195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_12
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1c919ea07b5e8c0800000000000000
+      internalID: -3970566238968888877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_13
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c88951d0a369940800000000000000
+      internalID: 5302489439146642581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_14
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70a722ae83eb0b90800000000000000
+      internalID: -7274470571341537157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_15
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6a87b0188026940800000000000000
+      internalID: 5287798262822643383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_16
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72a84604be5b4d50800000000000000
+      internalID: 6722570996073144954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_17
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b3d7acf74a25e70800000000000000
+      internalID: 9102518665634200478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_18
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b366f89feca228370800000000000000
+      internalID: 8323262129772652091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_19
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b38426dacce9f40800000000000000
+      internalID: 5737248020366900023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_20
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3267eb5a3ca4ea90800000000000000
+      internalID: -7285508930528648645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_21
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cc7a344a9495d320800000000000000
+      internalID: 2582133351657405637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_22
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47429dbd57d1ab3f0800000000000000
+      internalID: -884361984788061068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_23
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a336ee0c6bbe650800000000000000
+      internalID: 6263300646538263161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_24
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc4dbea4fa13edea0800000000000000
+      internalID: -5846180637334317873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_25
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 155
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e698f9e6c963baf0800000000000000
+      internalID: -381845240346536216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_26
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 140
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7fe33397132b280800000000000000
+      internalID: -9029099906303854686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 111
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ee740dcf2a126f0800000000000000
+      internalID: -711108059437994403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_28
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 111
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c3fda97bae6dc4e0800000000000000
+      internalID: -1959788580076391488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 77
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9830ff9c9599c10b0800000000000000
+      internalID: -5756557612766264439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_30
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 77
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90967e469907d19c0800000000000000
+      internalID: -3954881093636232951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 42
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46502c9ff9a94ef0800000000000000
+      internalID: -123380599474858419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_32
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 42
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 582bbabdc1501af10800000000000000
+      internalID: 2279108507928867461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_33
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 13
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b87b056814783e90800000000000000
+      internalID: -7045753968897853259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_34
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c71a311ddd008b0800000000000000
+      internalID: -5187902880683557830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_35
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aaa3a9b9337488b0800000000000000
+      internalID: -5150865382040163680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_36
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25530d1c0de1ce330800000000000000
+      internalID: 3741399272391718226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_37
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d31cb7ef0a82e8180800000000000000
+      internalID: -9111300324194533059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_38
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa23f9319f2795cc0800000000000000
+      internalID: -3721817202943380817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_39
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1fe8477c25435060800000000000000
+      internalID: 6940967507990212383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_40
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2effe032f0ef1b140800000000000000
+      internalID: 4733844024309252066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_41
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda90e0f3733dc400800000000000000
+      internalID: 345989319432903388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_42
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4096daddf48047ec0800000000000000
+      internalID: -3570219465483392764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_43
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9800a7e410e843c20800000000000000
+      internalID: 3185326972720513161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_44
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d00808d8fadff5d0800000000000000
+      internalID: -3026459662258536234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_45
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc050969c13130670800000000000000
+      internalID: 8503661534911680715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_46
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 185b11ea8530e1ab0800000000000000
+      internalID: -5035583653941234303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_47
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 429c59217504c7ca0800000000000000
+      internalID: -6017864259355686620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_48
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3939fd87d022ad580800000000000000
+      internalID: -8801685080484375661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_49
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2ddc7efb5a85f00800000000000000
+      internalID: 1105815952165819086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_50
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8ce86ca35497940800000000000000
+      internalID: 5294338955692394674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_51
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f94d0df2271a2c170800000000000000
+      internalID: 8197291783568282783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_52
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b4ed2917ee32a90800000000000000
+      internalID: -7339760796121019614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_53
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20f40cda247bded0800000000000000
+      internalID: -2388187449961156564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_54
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23943a71f1b5c29d0800000000000000
+      internalID: -2797761079405229774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_55
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f98256d70500def0800000000000000
+      internalID: -85562861701395980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_56
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102adecf80e21e600800000000000000
+      internalID: 495728050125513217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_57
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2feddf6d03289010800000000000000
+      internalID: 1195744241685229356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_58
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 0
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34c35145e5a109990800000000000000
+      internalID: -7381370796820317117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: den1 1_59
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 13
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7026c12e7a7a276f0800000000000000
+      internalID: -688303453539376633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      den1 1_0: -7370561001073344868
+      den1 1_1: -2889699709102086945
+      den1 1_10: 4840098308371367154
+      den1 1_11: -1772576636281952195
+      den1 1_12: -3970566238968888877
+      den1 1_13: 5302489439146642581
+      den1 1_14: -7274470571341537157
+      den1 1_15: 5287798262822643383
+      den1 1_16: 6722570996073144954
+      den1 1_17: 9102518665634200478
+      den1 1_18: 8323262129772652091
+      den1 1_19: 5737248020366900023
+      den1 1_2: -2624033150240017859
+      den1 1_20: -7285508930528648645
+      den1 1_21: 2582133351657405637
+      den1 1_22: -884361984788061068
+      den1 1_23: 6263300646538263161
+      den1 1_24: -5846180637334317873
+      den1 1_25: -381845240346536216
+      den1 1_26: -9029099906303854686
+      den1 1_27: -711108059437994403
+      den1 1_28: -1959788580076391488
+      den1 1_29: -5756557612766264439
+      den1 1_3: -1386930327218390762
+      den1 1_30: -3954881093636232951
+      den1 1_31: -123380599474858419
+      den1 1_32: 2279108507928867461
+      den1 1_33: -7045753968897853259
+      den1 1_34: -5187902880683557830
+      den1 1_35: -5150865382040163680
+      den1 1_36: 3741399272391718226
+      den1 1_37: -9111300324194533059
+      den1 1_38: -3721817202943380817
+      den1 1_39: 6940967507990212383
+      den1 1_4: 3299742468333495513
+      den1 1_40: 4733844024309252066
+      den1 1_41: 345989319432903388
+      den1 1_42: -3570219465483392764
+      den1 1_43: 3185326972720513161
+      den1 1_44: -3026459662258536234
+      den1 1_45: 8503661534911680715
+      den1 1_46: -5035583653941234303
+      den1 1_47: -6017864259355686620
+      den1 1_48: -8801685080484375661
+      den1 1_49: 1105815952165819086
+      den1 1_5: -1377171454102569863
+      den1 1_50: 5294338955692394674
+      den1 1_51: 8197291783568282783
+      den1 1_52: -7339760796121019614
+      den1 1_53: -2388187449961156564
+      den1 1_54: -2797761079405229774
+      den1 1_55: -85562861701395980
+      den1 1_56: 495728050125513217
+      den1 1_57: 1195744241685229356
+      den1 1_58: -7381370796820317117
+      den1 1_59: -688303453539376633
+      den1 1_6: -7702164306814323888
+      den1 1_7: 1768713313577876526
+      den1 1_8: -403901525760471021
+      den1 1_9: -9029481687566111738
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
