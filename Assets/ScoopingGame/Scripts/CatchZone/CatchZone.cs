@@ -5,6 +5,11 @@ using UnityEngine;
     public class CatchZone : MonoBehaviour
     {
         public List<BlindBag> caughtItems = new List<BlindBag>();
+        
+        public void ActiveCatchZone()
+        {
+            GetComponent<Collider2D>().enabled = true;
+        }
         public void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.CompareTag("BlindBag"))

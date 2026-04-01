@@ -153,6 +153,15 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
+        time: 5.5666666
+        value: 6e-45
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
         time: 9.016666
         value: 6e-45
         inSlope: Infinity
@@ -575,6 +584,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 2.4
         value: 4e-45
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 5.5666666
+        value: 6e-45
         inSlope: Infinity
         outSlope: Infinity
         tangentMode: 103
