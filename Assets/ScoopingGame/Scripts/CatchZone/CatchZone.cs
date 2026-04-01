@@ -10,6 +10,10 @@ using UnityEngine;
         {
             GetComponent<Collider2D>().enabled = true;
         }
+        public void DeactiveCatchZone()
+        {
+            GetComponent<Collider2D>().enabled = false;
+        }
         public void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.CompareTag("BlindBag"))

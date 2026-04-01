@@ -11,6 +11,8 @@ using UnityEngine;
         [SerializeField] private Transform blindBagSpawnPoint;
         public CatchZone catchZone;
         public Spoon spoon;
+        public Unboxing unboxing;
+        public BlindBagClassification blindBagClassification;
         public float clawMoveSpeed;
         public float powerTime;
         public float gameTime;
@@ -29,7 +31,7 @@ using UnityEngine;
         }
         void Start()
         {
-            StartCoroutine(ActiveCatchZoneTemporarily());
+            StartCoroutine(SpawnBlindBag());
         }
         public void StartScooping()
         {
@@ -71,11 +73,11 @@ using UnityEngine;
             }
             
         }
-        IEnumerator ActiveCatchZoneTemporarily()
-        {
-            yield return StartCoroutine(SpawnBlindBag());
-            yield return new WaitForSeconds(1f); // Giữ nguyên trạng thái trong 10 giây
-            catchZone.gameObject.SetActive(true);
-        }
+        // IEnumerator ActiveCatchZoneTemporarily()
+        // {
+        //     yield return StartCoroutine(SpawnBlindBag());
+        //     yield return new WaitForSeconds(1f); 
+        //     catchZone.gameObject.SetActive(true);
+        // }
     }
 // }

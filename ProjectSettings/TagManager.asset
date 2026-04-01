@@ -45,5 +45,8 @@ TagManager:
   - name: Map
     uniqueID: 1345271245
     locked: 0
+  - name: UI
+    uniqueID: 4222517441
+    locked: 0
   m_RenderingLayers:
   - Default
