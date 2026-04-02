@@ -1,13 +1,17 @@
 using TMPro;
 using UnityEngine;
-
-public class ClassifiedItems : MonoBehaviour
+namespace Rubik.ScoopingGame
 {
-    public Rarity rarity;
-    public RectTransform position;
-    public TextMeshProUGUI numberText;
-    public void SetUp(int number)
+    public class ClassifiedItems : MonoBehaviour
     {
-        numberText.text = number.ToString();
+        public Rarity rarity;
+        public RectTransform position;
+        public TextMeshProUGUI numberText;
+        public int number;
+        public void SetUp()
+        {
+            this.number += 1;
+            numberText.text = number.ToString();
+        }
     }
 }

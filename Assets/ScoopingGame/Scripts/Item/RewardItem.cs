@@ -1,15 +1,17 @@
 using UnityEngine;
 using UnityEngine.UI;
-
-public class RewardItem : MonoBehaviour
+namespace Rubik.ScoopingGame
 {
-    public string id;
-    public Image icon;
-    public Rarity rarity;
-    public void SetUp(string id, Sprite sprite, Rarity rarity)
+    public class RewardItem : MonoBehaviour
     {
-        this.id = id;
-        this.rarity = rarity;
-        icon.sprite = sprite;
+        public Image icon;
+        public Rarity rarity;
+        public void SetUp(ItemData itemData)
+        {
+            transform.localScale = Vector3.one;
+            this.rarity = itemData.rarity;
+            icon.sprite = DataAssets.instance.loadImage.IconItems[(int)rarity];
+        }
+        
     }
 }

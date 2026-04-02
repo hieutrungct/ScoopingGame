@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
-// namespace Rubik.ScoopingGame
-// {
+namespace Rubik.ScoopingGame
+{
     public class Claw : MonoBehaviour
     {
         public float angle;
@@ -117,4 +117,4 @@ using UnityEngine;
         
 
     }
-// }
+}

@@ -1,6 +1,6 @@
 using UnityEngine;
-// namespace Rubik.ScoopingGame
-// {
+namespace Rubik.ScoopingGame
+{
     public class BlindBag : MonoBehaviour
     {
         public string id;
@@ -39,4 +39,4 @@ using UnityEngine;
         }
         
     }
-// }
+}

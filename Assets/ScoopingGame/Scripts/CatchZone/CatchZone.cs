@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
-// namespace Rubik.ScoopingGame
-// {
+namespace Rubik.ScoopingGame
+{
     public class CatchZone : MonoBehaviour
     {
         public List<BlindBag> caughtItems = new List<BlindBag>();
@@ -35,16 +35,22 @@ using UnityEngine;
             // Add vào inventory
             // GameManager.Instance.AddItem(item.Data);
             // Attach vào spoon
-            Spoon spoon = ScoopingGameController.instance.spoon;
-            if (spoon != null)
-            {
-                spoon.AttachItems(caughtItems);
-            }
+            
+            
             caughtItems.Add(blindBag);
             blindBag.isGrabbed = true;
             Debug.Log("Caught: " + blindBag.id);
+            AttachItems(caughtItems);
             // Xóa object trong scene
             // Destroy(item.gameObject);
         }
+        void AttachItems(List<BlindBag> items)
+        {
+            var holdPoint = ScoopingGameController.instance.spoon.holdPoint;
+            foreach (var item in items)
+            {
+                item.AttachToSpoon(holdPoint);
+            }
+        }
     }
-// }
+}

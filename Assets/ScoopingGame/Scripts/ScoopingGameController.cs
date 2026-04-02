@@ -1,22 +1,32 @@
+// using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-// namespace Rubik.ScoopingGame
-// {
-    public class ScoopingGameController : MonoBehaviour
+
+namespace Rubik.ScoopingGame
+{
+public class ScoopingGameController : MonoBehaviour
     {
+        #region Singleton
         public static ScoopingGameController instance { get; private set; }
         public Claw claw;
         public ArcadeLeverRotate joystick;
         public BlindBag blindBagPrefab;
-        [SerializeField] private Transform blindBagSpawnPoint;
+        // public Transform blindBagSpawnPoint;
         public CatchZone catchZone;
         public Spoon spoon;
         public Unboxing unboxing;
         public BlindBagClassification blindBagClassification;
+        public BlindBagFlyEffect blindBagFlyEffect;
+        #endregion
+        
         public float clawMoveSpeed;
         public float powerTime;
         public float gameTime;
         public float mulTime;
+        #region Data
+        public List<ItemData> caughtItems = new List<ItemData>();
+        #endregion
         private void Awake()
         {
             if (instance != null && instance != this)
@@ -29,55 +39,25 @@ using UnityEngine;
                 // DontDestroyOnLoad(gameObject);
             }
         }
-        void Start()
-        {
-            StartCoroutine(SpawnBlindBag());
-        }
+        
         public void StartScooping()
         {
             claw.StartScooping();
         }
-        IEnumerator SpawnBlindBag()
+        
+        
+        // hiện tại chưa có dữ liệu từ client nên tạm thời sẽ giả lập bằng cách random dữ liệu blindbag, sau này có dữ liệu rồi thì sẽ sửa lại
+        public void SimulateCatchItems()
         {
-            for (int i = blindBagSpawnPoint.childCount - 1; i >= 0; i--)
+            caughtItems.Clear();
+            for (int i = 0; i < catchZone.caughtItems.Count; i++)
             {
-                // Dùng DestroyImmediate để đảm bảo nó biến mất trước khi Instantiate cái mới
-                DestroyImmediate(blindBagSpawnPoint.GetChild(i).gameObject);
-            }
-            yield return null;
-            for (int i = 0; i < 50; i++)
-            {
-                float randomOffsetX = Random.Range(-0.5f, 0.5f);    
-                Vector3 spawnPos = blindBagSpawnPoint.position + new Vector3(randomOffsetX, 0, 0);
-
-                
-                BlindBag g = Instantiate(blindBagPrefab, spawnPos, Quaternion.identity, blindBagSpawnPoint);
-                g.SetUp();
-                g.id = "BlindBag_" + i;
-                Rigidbody2D rb = g.GetComponent<Rigidbody2D>();
-                
-                if (rb != null)
-                {
-                    // Reset vận tốc về 0 trước khi bắn (đảm bảo lực tác động chính xác)
-                    rb.linearVelocity = Vector2.zero;
-
-                    // Tạo lực ngẫu nhiên nhỏ (Ví dụ: X từ -2 đến 2, Y từ 1 đến 4)
-                    float randomX = Random.Range(-2f, 2f);
-                    float randomY = Random.Range(1f, 4f); 
-                    Vector2 smallForce = new Vector2(randomX, randomY);
-
-                    // Áp dụng lực ngẫu nhiên vào Rigidbody2D
-                    rb.AddForce(smallForce, ForceMode2D.Impulse);
-                    yield return null; // Delay nhỏ giữa các lần spawn để tránh chồng lên nhau quá nhiều    
-                }
+                ItemData b = new ItemData();
+                b.id = System.Guid.NewGuid().GetHashCode().ToString();
+                b.rarity = (Rarity)Random.Range(1, 4);
+                caughtItems.Add(b);
             }
             
         }
-        // IEnumerator ActiveCatchZoneTemporarily()
-        // {
-        //     yield return StartCoroutine(SpawnBlindBag());
-        //     yield return new WaitForSeconds(1f); 
-        //     catchZone.gameObject.SetActive(true);
-        // }
     }
-// }
+}

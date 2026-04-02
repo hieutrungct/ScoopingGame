@@ -1,14 +1,16 @@
 using UnityEngine;
-
-public class GameEnums 
+namespace Rubik
 {
-    
-}
-public enum Rarity
-{
-    Common,
-    Uncommon,
-    Rare,
-    Epic,
-    Legendary
+    public class GameEnums 
+    {
+        
+    }
+    public enum Rarity
+    {
+        Common,
+        Uncommon,
+        Rare,
+        Epic,
+        Legendary
+    }
 }

@@ -2,63 +2,61 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-
-public class BlindBagFlyEffect : MonoBehaviour
+namespace Rubik.ScoopingGame
 {
-    public RectTransform coinPrefab;
-    public RectTransform targetUI;
-    public Canvas canvas;
-
-    public int coinCount = 10;
-    public float duration = 0.8f;
-
-    public void Play(Vector3 worldPos)
+    public class BlindBagFlyEffect : MonoBehaviour
     {
-        Vector2 screenPos = Camera.main.WorldToScreenPoint(worldPos);
+        public ItemFly itemPrefab;
+        public Canvas canvas;
+        public float duration = 0.8f;
 
-        for (int i = 0; i < coinCount; i++)
+        public void Play(Vector3 worldPos, int coinCount, RectTransform targetUI)
         {
-            RectTransform coin = Instantiate(coinPrefab, canvas.transform);
-            coin.position = screenPos;
+            // transform.DOKill();
+            Vector2 screenPos = Camera.main.WorldToScreenPoint(worldPos);
 
-            float delay = Random.Range(0f, 0.2f);
-
-            // random điểm cong
-            Vector3 midPoint = screenPos + new Vector2(
-                Random.Range(-100f, 100f),
-                Random.Range(100f, 200f)
-            );
-
-            Vector3[] path = new Vector3[]
+            for (int i = 0; i < coinCount; i++)
             {
-                screenPos,
-                midPoint,
-                targetUI.position
-            };
+                ItemFly coin = Instantiate(itemPrefab, canvas.transform);
+                coin.transform.position = screenPos;
 
-            coin.localScale = Vector3.zero;
+                float delay = Random.Range(0f, 0.2f);
 
-            Sequence seq = DOTween.Sequence();
+                // random điểm cong
+                Vector3 midPoint = screenPos + new Vector2(
+                    Random.Range(-100f, 100f),
+                    Random.Range(100f, 200f)
+                );
 
-            seq.AppendInterval(delay);
+                Vector3[] path = new Vector3[]
+                {
+                    screenPos,
+                    midPoint,
+                    targetUI.position
+                };
 
-            // scale pop
-            seq.Append(coin.DOScale(1f, 0.2f).SetEase(Ease.OutBack));
+                coin.transform.localScale = Vector3.zero;
 
-            // bay theo path
-            seq.Join(coin.DOPath(path, duration, PathType.CatmullRom)
-                .SetEase(Ease.InOutQuad));
+                Sequence seq = DOTween.Sequence();
 
-            // nhỏ lại khi gần tới
-            seq.Join(coin.DOScale(0.3f, duration));
+                seq.AppendInterval(delay);
 
-            seq.OnComplete(() =>
-            {
-                Destroy(coin.gameObject);
+                // scale pop
+                seq.Append(coin.transform.DOScale(1f, 0.2f).SetEase(Ease.OutBack));
 
-                // cộng tiền ở đây
-                // CurrencyManager.Add(1);
-            });
+                // bay theo path
+                seq.Join(coin.transform.DOPath(path, duration, PathType.CatmullRom)
+                    .SetEase(Ease.InOutQuad));
+
+                // nhỏ lại khi gần tới
+                seq.Join(coin.transform.DOScale(0.3f, duration));
+
+                seq.OnComplete(() =>
+                {
+                    Destroy(coin.gameObject);
+
+                });
+            }
         }
     }
 }
