@@ -23,7 +23,7 @@ namespace Rubik.ScoopingGame
                 Vector3 spawnPos = transform.position + new Vector3(randomOffsetX, 0, 0);
 
                 
-                BlindBag g = Instantiate(ScoopingGameController.instance.blindBagPrefab, spawnPos, Quaternion.identity, transform);
+                BlindBag g = Instantiate(GameController.instance.blindBagPrefab, spawnPos, Quaternion.identity, transform);
                 g.SetUp();
                 g.id = "BlindBag_" + i;
                 Rigidbody2D rb = g.GetComponent<Rigidbody2D>();

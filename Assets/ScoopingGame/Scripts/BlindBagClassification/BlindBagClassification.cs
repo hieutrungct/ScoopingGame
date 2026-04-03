@@ -19,7 +19,7 @@ namespace Rubik.ScoopingGame
         }
         public void ClassifyItems()
         {
-            var bf = ScoopingGameController.instance.blindBagFlyEffect;
+            var bf = GameController.instance.blindBagFlyEffect;
             foreach (var classifiedItem in blindBagClassificationUI.classifiedItems)
             {
                 if (classifiedItem.number > 0)

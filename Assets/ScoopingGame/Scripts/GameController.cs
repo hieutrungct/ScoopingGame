@@ -5,12 +5,12 @@ using UnityEngine;
 
 namespace Rubik.ScoopingGame
 {
-public class ScoopingGameController : MonoBehaviour
+    public class GameController : MonoBehaviour
     {
         #region Singleton
-        public static ScoopingGameController instance { get; private set; }
+        public static GameController instance { get; private set; }
         // public Claw claw;
-        public ArcadeLeverRotate joystick;
+        // public ArcadeLeverRotate joystick;
         public BlindBag blindBagPrefab;
         // public Transform blindBagSpawnPoint;
         public CatchZone catchZone;
@@ -21,11 +21,8 @@ public class ScoopingGameController : MonoBehaviour
         public CollectedItems collectedItems;
         #endregion
         
-        public float clawMoveSpeed;
-        public float powerTime;
-        public float gameTime;
-        public float mulTime;
-        #region Data
+
+        #region DataTest
         public List<ItemData> caughtItems = new List<ItemData>();
         #endregion
         private void Awake()
@@ -41,10 +38,7 @@ public class ScoopingGameController : MonoBehaviour
             }
         }
         
-        // public void StartScooping()
-        // {
-        //     claw.StartScooping();
-        // }
+        
         
         
         // hiện tại chưa có dữ liệu từ client nên tạm thời sẽ giả lập bằng cách random dữ liệu blindbag, sau này có dữ liệu rồi thì sẽ sửa lại

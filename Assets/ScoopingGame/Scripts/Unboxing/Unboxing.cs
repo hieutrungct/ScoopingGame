@@ -43,7 +43,7 @@ namespace Rubik.ScoopingGame
         }
         public void OpenBlindBag()
         {
-            var s = ScoopingGameController.instance;
+            var s = GameController.instance;
 
             transform.DOKill();
             Sequence seq = DOTween.Sequence();
@@ -87,8 +87,8 @@ namespace Rubik.ScoopingGame
         }
         public void CollectReward()
         {
-            var s = ScoopingGameController.instance;
-            if (isOpened && rewardIndex < ScoopingGameController.instance.catchZone.caughtItems.Count)
+            var s = GameController.instance;
+            if (isOpened && rewardIndex < GameController.instance.catchZone.caughtItems.Count)
             {
                 Sequence seq = DOTween.Sequence();
                 seq.Append(reward.transform.DOScale(0f, 0.3f).SetEase(Ease.InBack));
@@ -102,7 +102,7 @@ namespace Rubik.ScoopingGame
                     SetUp();
                 });
             }
-            else if (rewardIndex >= ScoopingGameController.instance.catchZone.caughtItems.Count)
+            else if (rewardIndex >= GameController.instance.catchZone.caughtItems.Count)
             {
                 gameObject.SetActive(false);
                 SetUp();

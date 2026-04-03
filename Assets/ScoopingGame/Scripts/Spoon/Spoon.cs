@@ -27,34 +27,8 @@ namespace Rubik.ScoopingGame
         private BlindBagClassification bc;
         private void Start()
         {
-            ub = ScoopingGameController.instance.unboxing;
-            bc = ScoopingGameController.instance.blindBagClassification;
-        }
-        void Update()
-        {
-            // if (currentState == SpoonState.ScoopingReturn)
-            // {
-            //     if (!isScooping)
-            //     {
-            //         ScoopingGameController.instance.catchZone.ActiveCatchZone();
-            //         isScooping = true;
-            //     }
-            // }
-            // if (currentState == SpoonState.Collecting)
-            // {
-            //     if (isScooping)
-            //     {
-            //         ScoopingGameController.instance.catchZone.DeactiveCatchZone();
-
-            //         animator.enabled = false;
-            //         isScooping = false;
-
-            //         ub.gameObject.SetActive(true);
-            //         bc.gameObject.SetActive(true);
-            //         Debug.Log("Show unboxing and classification");
-            //     }
-                
-            // }
+            ub = GameController.instance.unboxing;
+            bc = GameController.instance.blindBagClassification;
         }
         public void Scoop()
         {
@@ -93,7 +67,7 @@ namespace Rubik.ScoopingGame
             seq.AppendCallback(() =>
             {
                 currentState = SpoonState.ScoopingReturn;
-                ScoopingGameController.instance.catchZone.ActiveCatchZone();
+                GameController.instance.catchZone.ActiveCatchZone();
             });
             Vector3[] path2 = new Vector3[]
             {
@@ -105,10 +79,10 @@ namespace Rubik.ScoopingGame
             seq.AppendCallback(() =>
             {
                 currentState = SpoonState.Collecting;
-                ScoopingGameController.instance.catchZone.DeactiveCatchZone();
-                if (ScoopingGameController.instance.catchZone.caughtItems.Count > 0)
+                GameController.instance.catchZone.DeactiveCatchZone();
+                if (GameController.instance.catchZone.caughtItems.Count > 0)
                 {
-                    ScoopingGameController.instance.SimulateCatchItems();
+                    GameController.instance.SimulateCatchItems();
                     
                     ub.gameObject.SetActive(true);
                     bc.gameObject.SetActive(true);
