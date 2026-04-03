@@ -347,6 +347,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31746397}
   m_CullTransparentMesh: 1
+--- !u!1 &63340088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63340089}
+  - component: {fileID: 63340090}
+  m_Layer: 0
+  m_Name: UnboxingController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &63340089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63340088}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 328253134}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &63340090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63340088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18a434a6f5f66364d89c7e5eae6af5a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unboxingUI: {fileID: 0}
+  classification: {fileID: 0}
 --- !u!1 &66443139
 GameObject:
   m_ObjectHideFlags: 0
@@ -1984,8 +2030,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blindBagPrefab: {fileID: 4329511474662526386, guid: 6861e5641ddbf484aa4d2c05e6af6937, type: 3}
-  catchZone: {fileID: 338166308}
-  spoon: {fileID: 2012370619}
+  spooningController: {fileID: 0}
   unboxing: {fileID: 447498084}
   blindBagClassification: {fileID: 872264257}
   blindBagFlyEffect: {fileID: 659831260}
@@ -2007,6 +2052,8 @@ Transform:
   - {fileID: 659831261}
   - {fileID: 1221877918}
   - {fileID: 872264256}
+  - {fileID: 1635380317}
+  - {fileID: 63340089}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &338166304
@@ -7939,6 +7986,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b26883f06e8a3674686d65f63175dfc8, type: 3}
+--- !u!1 &1635380316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1635380317}
+  - component: {fileID: 1635380318}
+  m_Layer: 0
+  m_Name: SpoonController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1635380317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635380316}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 328253134}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1635380318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1635380316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f308fd469ad2fa4ab04a9fc5ff3e822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spoonUI: {fileID: 2012370619}
+  catchZone: {fileID: 338166308}
 --- !u!1 &1656970290
 GameObject:
   m_ObjectHideFlags: 0
@@ -10000,14 +10093,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10163b56c9e732a41924036e34a35758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  holdPoint: {fileID: 243648493}
   point_1_7: {fileID: 323215490}
   point_2_6: {fileID: 316656059}
   point_3: {fileID: 2022575172}
   point_4: {fileID: 889385780}
   point_5: {fileID: 880624787}
-  animator: {fileID: 2012370618}
-  currentState: 0
 --- !u!1 &2022575171
 GameObject:
   m_ObjectHideFlags: 0

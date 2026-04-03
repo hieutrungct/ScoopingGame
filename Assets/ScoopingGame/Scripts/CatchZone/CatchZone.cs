@@ -46,10 +46,10 @@ namespace Rubik.ScoopingGame
         }
         void AttachItems(List<BlindBag> items)
         {
-            var holdPoint = GameController.instance.spoon.holdPoint;
+            // var holdPoint = GameController.instance.spoon.holdPoint;
             foreach (var item in items)
             {
-                item.AttachToSpoon(holdPoint);
+                // item.AttachToSpoon(holdPoint);
             }
         }
     }
