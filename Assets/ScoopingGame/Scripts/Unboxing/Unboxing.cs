@@ -76,12 +76,12 @@ namespace Rubik.ScoopingGame
             {
                 reward.gameObject.SetActive(true);
                 reward.SetUp(s.caughtItems[rewardIndex]);
-                // rewardIndex++;
+                
             });
 
             seq.Append(reward.transform.DOScale(1.2f, 0.3f).SetEase(Ease.OutBack));
             seq.Append(reward.transform.DOScale(1f, 0.2f));
-            // Camera.main.transform.DOShakePosition(0.2f, 5f);
+            
             isOpened = true;
             
         }

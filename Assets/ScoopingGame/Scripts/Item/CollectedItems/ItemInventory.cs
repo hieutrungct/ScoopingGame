@@ -8,6 +8,9 @@ namespace Rubik.ScoopingGame
         [SerializeField] private TextMeshProUGUI itemCountText;
         [SerializeField] private Button redeemReward_btn;
         [SerializeField] private int itemCount;
+        public Image itemIcon;
+        public Rarity rarity;
+        
         
     }
 }

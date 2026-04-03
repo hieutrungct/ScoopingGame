@@ -4,10 +4,11 @@ namespace Rubik.ScoopingGame
 {
     public class BlindBagClassification : MonoBehaviour
     {
-        public List<ClassifiedItems> classifiedItems;
+        public BlindBagClassificationUI blindBagClassificationUI;
+        
         public void ClassifyItemsText(ItemData items)
         {
-            foreach (var classifiedItem in classifiedItems)
+            foreach (var classifiedItem in blindBagClassificationUI.classifiedItems)
             {
                 if (classifiedItem.rarity == items.rarity)
                 {
@@ -16,11 +17,12 @@ namespace Rubik.ScoopingGame
                 }
             }
         }
-        public void ClassifyItems(ItemData items)
+        public void ClassifyItems()
         {
-            foreach (var classifiedItem in classifiedItems)
+            var bf = ScoopingGameController.instance.blindBagFlyEffect;
+            foreach (var classifiedItem in blindBagClassificationUI.classifiedItems)
             {
-                if (classifiedItem.rarity == items.rarity && classifiedItem.number > 0)
+                if (classifiedItem.number > 0)
                 {
                     
                 }

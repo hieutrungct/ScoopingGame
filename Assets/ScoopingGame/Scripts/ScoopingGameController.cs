@@ -9,7 +9,7 @@ public class ScoopingGameController : MonoBehaviour
     {
         #region Singleton
         public static ScoopingGameController instance { get; private set; }
-        public Claw claw;
+        // public Claw claw;
         public ArcadeLeverRotate joystick;
         public BlindBag blindBagPrefab;
         // public Transform blindBagSpawnPoint;
@@ -18,6 +18,7 @@ public class ScoopingGameController : MonoBehaviour
         public Unboxing unboxing;
         public BlindBagClassification blindBagClassification;
         public BlindBagFlyEffect blindBagFlyEffect;
+        public CollectedItems collectedItems;
         #endregion
         
         public float clawMoveSpeed;
@@ -40,10 +41,10 @@ public class ScoopingGameController : MonoBehaviour
             }
         }
         
-        public void StartScooping()
-        {
-            claw.StartScooping();
-        }
+        // public void StartScooping()
+        // {
+        //     claw.StartScooping();
+        // }
         
         
         // hiện tại chưa có dữ liệu từ client nên tạm thời sẽ giả lập bằng cách random dữ liệu blindbag, sau này có dữ liệu rồi thì sẽ sửa lại

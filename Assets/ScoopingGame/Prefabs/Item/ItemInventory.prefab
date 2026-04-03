@@ -216,6 +216,8 @@ MonoBehaviour:
   itemCountText: {fileID: 6378259603338922378}
   redeemReward_btn: {fileID: 7461587092878908976}
   itemCount: 0
+  itemIcon: {fileID: 447940594020515341}
+  rarity: 0
 --- !u!1 &1879373291871380667
 GameObject:
   m_ObjectHideFlags: 0

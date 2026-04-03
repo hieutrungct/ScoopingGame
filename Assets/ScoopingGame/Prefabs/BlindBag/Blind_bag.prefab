@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8666939746823220136}
   - component: {fileID: 4787939846213928365}
-  - component: {fileID: 7655387116689084673}
   - component: {fileID: 4329511474662526386}
-  - component: {fileID: 8569979851976096877}
-  m_Layer: 10
+  - component: {fileID: 640191782312696315}
+  - component: {fileID: 7362214474639074603}
+  m_Layer: 0
   m_Name: Blind_bag
   m_TagString: BlindBag
   m_Icon: {fileID: 0}
@@ -90,7 +90,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &7655387116689084673
+--- !u!114 &4329511474662526386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3451377265368839857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a9dd01ebc998d41bb8e87fe2424ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 
+  icon: {fileID: 4787939846213928365}
+  isGrabbed: 0
+--- !u!50 &640191782312696315
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -117,22 +132,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &4329511474662526386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3451377265368839857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5a9dd01ebc998d41bb8e87fe2424ebf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  id: 
-  icon: {fileID: 4787939846213928365}
-  isGrabbed: 0
---- !u!70 &8569979851976096877
+--- !u!70 &7362214474639074603
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -166,6 +166,6 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 4.45, y: 5.27}
+  m_Offset: {x: -0.10229707, y: 0}
+  m_Size: {x: 2.8406308, y: 5}
   m_Direction: 0
