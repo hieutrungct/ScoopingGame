@@ -8,56 +8,58 @@ namespace Rubik.ScoopingGame
     {
         public ItemFly itemPrefab;
         public Canvas canvas;
-        public float duration = 2f;
-
-        public void FlyEffect(Transform startPos, int coinCount, Transform targetUI)
+        public float duration = 1f;
+        
+        public void FlyEffect(Transform startPos, int coinCount, Transform targetUI, Sprite itemIcon)
         {
+            
             transform.DOKill();
-            Vector2 screenPos = startPos.position;
 
             for (int i = 0; i < coinCount; i++)
             {
                 ItemFly coin = Instantiate(itemPrefab, canvas.transform);
                 coin.transform.position = startPos.position;
+                coin.SetUpImage(itemIcon);
+                coin.transform.localScale = Vector3.zero;
 
-                float delay = Random.Range(0f, 0.2f);
-
-                // random điểm cong
-                Vector3 midPoint = screenPos + new Vector2(
-                    Random.Range(-0.5f, 0.5f),
-                    Random.Range(0.5f, 1f)
+                float delay = Random.Range(0f, 0.7f);
+                
+                Vector3 burstPos = startPos.position + (Vector3)Random.insideUnitCircle * 1f; 
+                
+                Vector3 midPoint = Vector3.Lerp(burstPos, targetUI.position, 0.5f) + new Vector3(
+                    Random.Range(-0.3f, 0.3f), 
+                    Random.Range(0.3f, 0.6f), 
+                    0
                 );
 
-                Vector3[] path = new Vector3[]
-                {
-                    screenPos,
-                    midPoint,
-                    targetUI.position
-                };
-
-                coin.transform.localScale = Vector3.zero;
+                Vector3[] path = new Vector3[] { burstPos, midPoint, targetUI.position };
 
                 Sequence seq = DOTween.Sequence();
 
                 seq.AppendInterval(delay);
 
-                // scale pop
-                seq.Append(coin.transform.DOScale(1f, 0.2f).SetEase(Ease.OutBack));
+                seq.AppendCallback(() => coin.PlayTrail()); // Start trail effect at the burst position
 
-                // bay theo path
-                seq.Join(coin.transform.DOPath(path, duration, PathType.CatmullRom)
-                    .SetEase(Ease.Linear));
+                seq.Append(coin.transform.DOScale(1f, 0.4f).SetEase(Ease.OutBack));
+                seq.Join(coin.transform.DOMove(burstPos, 0.4f).SetEase(Ease.OutQuad));
 
-                // nhỏ lại khi gần tới
-                seq.Join(coin.transform.DOScale(0.3f, duration));
+                seq.Append(coin.transform.DOPath(path, duration, PathType.CatmullRom)
+                    .SetEase(Ease.InBack)); 
+                
+                seq.Join(coin.transform.DOScale(0.4f, duration));
 
                 seq.OnComplete(() =>
                 {
-                    Destroy(coin.gameObject);
+                    targetUI.DOKill(true);
+                    targetUI.DOPunchScale(new Vector3(0.1f, 0.1f, 0.1f), 0.1f);
+                    
+                    coin.StopTrailAndDisconnect(); // Stop the trail effect and disconnect it from the coin
 
+                    Destroy(coin.gameObject);
                 });
             }
         }
+        
         
         
     }

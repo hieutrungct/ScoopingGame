@@ -9,6 +9,17 @@ namespace Rubik.ScoopingGame
         {
             collectedItemsUI.SetUp(items);
         }
+        public Transform GetInventoryItemTarget(Rarity rarity)
+        {
+            foreach (var inventory in collectedItemsUI.lsItemInventory)
+            {
+                if (inventory.rarity == rarity)
+                {
+                    return inventory.itemCountText.transform;
+                }
+            }
+            return null;
+        }
 
     }
 }

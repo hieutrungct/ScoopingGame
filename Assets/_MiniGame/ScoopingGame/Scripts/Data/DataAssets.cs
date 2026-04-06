@@ -8,7 +8,7 @@ namespace Rubik
         private void Awake()
         {
             instance = this;
-            loadImage.LoadAllSprites();
+            // loadImage.LoadAllSprites();
         }
 
     }

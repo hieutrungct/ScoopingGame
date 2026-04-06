@@ -52,6 +52,7 @@ namespace Rubik.ScoopingGame
                 else
                 {
                     unboxingUI.HideAll();
+                    GameController.instance.blindBagClassification.ClassifyItemsIntoCollectedItems();
                 }
             });
         }
