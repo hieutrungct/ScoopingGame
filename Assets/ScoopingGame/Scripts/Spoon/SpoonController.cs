@@ -6,10 +6,11 @@ namespace Rubik.ScoopingGame
 {
     public class SpoonController : MonoBehaviour
     {
-        [SerializeField] private SpoonUI spoonUI;
+        public SpoonUI spoonUI;
         [SerializeField] private CatchZone catchZone;
 
-        public event Action<List<ItemData>> OnScoopingDone;
+
+        public List<BlindBag> lsBlindBag = new List<BlindBag>();
 
         public void StartScooping()
         {
@@ -21,9 +22,8 @@ namespace Rubik.ScoopingGame
                 onComplete: () =>
                 {
                     catchZone.DeactiveCatchZone();
-
-                    var items = catchZone.caughtItems;
-                    OnScoopingDone?.Invoke(items);
+                    lsBlindBag = catchZone.caughtItems;
+                    GameController.instance.OnScoopingDone(lsBlindBag);
                 }
             );
         }

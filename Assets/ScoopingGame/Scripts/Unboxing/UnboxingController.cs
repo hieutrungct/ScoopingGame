@@ -4,9 +4,8 @@ namespace Rubik.ScoopingGame
 {
     public class UnboxingController : MonoBehaviour
     {
-        public UnboxingUI unboxingUI;
-        [SerializeField] private BlindBagClassification classification;
-
+        [SerializeField] private UnboxingUI unboxingUI;
+        
         private List<ItemData> items;
         private int currentIndex;
         private bool isOpened;
@@ -30,6 +29,10 @@ namespace Rubik.ScoopingGame
                 isOpened = true;
             });
         }
+        public void ShowUnboxingUI()
+        {
+            unboxingUI.gameObject.SetActive(true);
+        }
 
         public void Collect()
         {
@@ -37,7 +40,7 @@ namespace Rubik.ScoopingGame
 
             unboxingUI.HideReward(() =>
             {
-                classification.ClassifyItemsText(items[currentIndex]);
+                GameController.instance.blindBagClassification.ClassifyItems(items[currentIndex]);
 
                 currentIndex++;
                 isOpened = false;

@@ -4,20 +4,10 @@ namespace Rubik.ScoopingGame
 {
     public class BlindBagClassification : MonoBehaviour
     {
-        public BlindBagClassificationUI blindBagClassificationUI;
-        
-        public void ClassifyItemsText(ItemData items)
-        {
-            foreach (var classifiedItem in blindBagClassificationUI.classifiedItems)
-            {
-                if (classifiedItem.rarity == items.rarity)
-                {
-                    classifiedItem.SetUp();
-                    return;
-                }
-            }
-        }
-        public void ClassifyItems()
+        [SerializeField] private BlindBagClassificationUI blindBagClassificationUI;
+        public Transform inventoryItemTarget;
+        [ContextMenu("ClassifyItemsIntoCollectedItems")]
+        public void ClassifyItemsIntoCollectedItems()
         {
             var bf = GameController.instance.blindBagFlyEffect;
             foreach (var classifiedItem in blindBagClassificationUI.classifiedItems)
@@ -25,8 +15,14 @@ namespace Rubik.ScoopingGame
                 if (classifiedItem.number > 0)
                 {
                     
+                    bf.FlyEffect(classifiedItem.transform, classifiedItem.number, inventoryItemTarget);
                 }
             }
         }
+        public void ClassifyItems(ItemData items)
+        {
+            blindBagClassificationUI.ClassifyItemsText(items);
+        }
+
     }
 }

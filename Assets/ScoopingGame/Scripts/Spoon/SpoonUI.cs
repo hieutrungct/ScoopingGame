@@ -30,23 +30,21 @@ namespace Rubik.ScoopingGame
             seq.Append(transform.DOPath(path1, 1f, PathType.CatmullRom).SetEase(Ease.Linear));
 
             // xuống
-            seq.Append(transform.DOMove(point_3.position, 1f));
-            seq.Join(transform.DOLocalRotate(new Vector3(0,0,90), 1f));
+            seq.Append(transform.DOMove(point_3.position, 1f).SetEase(Ease.Linear));
+            seq.Join(transform.DOLocalRotate(new Vector3(0,0,90), 1f).SetEase(Ease.Linear));
 
             // lên
-            seq.Append(transform.DOMove(point_4.position, 0.5f));
-            seq.Join(transform.DOLocalRotate(Vector3.zero, 1f));
+            seq.Append(transform.DOMove(point_4.position, 0.5f).SetEase(Ease.Linear));
+            seq.Join(transform.DOLocalRotate(Vector3.zero, 1f).SetEase(Ease.Linear));
 
-            seq.Append(transform.DOMove(point_5.position, 0.5f));
+            seq.Append(transform.DOMove(point_5.position, 1f).SetEase(Ease.Linear));
 
-            // 🔥 báo controller bật catch zone
+            // quay về
+            seq.Append(transform.DOMove(point_2_6.position, 0.7f).SetEase(Ease.Linear));
             seq.AppendCallback(() =>
             {
                 onReachCatchZone?.Invoke();
             });
-
-            // quay về
-            seq.Append(transform.DOMove(point_2_6.position, 1f));
 
             Vector3[] path2 = new Vector3[]
             {
@@ -55,9 +53,7 @@ namespace Rubik.ScoopingGame
                 startPos
             };
 
-            seq.Append(transform.DOPath(path2, 2f, PathType.CatmullRom));
-
-            // 🔥 kết thúc
+            seq.Append(transform.DOPath(path2, 2f, PathType.CatmullRom).SetEase(Ease.Linear));
             seq.OnComplete(() =>
             {
                 onComplete?.Invoke();

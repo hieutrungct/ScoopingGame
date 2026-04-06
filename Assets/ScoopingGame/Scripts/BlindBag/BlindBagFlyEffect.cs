@@ -8,24 +8,24 @@ namespace Rubik.ScoopingGame
     {
         public ItemFly itemPrefab;
         public Canvas canvas;
-        public float duration = 0.8f;
+        public float duration = 2f;
 
-        public void Play(Vector3 worldPos, int coinCount, RectTransform targetUI)
+        public void FlyEffect(Transform startPos, int coinCount, Transform targetUI)
         {
-            // transform.DOKill();
-            Vector2 screenPos = Camera.main.WorldToScreenPoint(worldPos);
+            transform.DOKill();
+            Vector2 screenPos = startPos.position;
 
             for (int i = 0; i < coinCount; i++)
             {
                 ItemFly coin = Instantiate(itemPrefab, canvas.transform);
-                coin.transform.position = screenPos;
+                coin.transform.position = startPos.position;
 
                 float delay = Random.Range(0f, 0.2f);
 
                 // random điểm cong
                 Vector3 midPoint = screenPos + new Vector2(
-                    Random.Range(-100f, 100f),
-                    Random.Range(100f, 200f)
+                    Random.Range(-0.5f, 0.5f),
+                    Random.Range(0.5f, 1f)
                 );
 
                 Vector3[] path = new Vector3[]
@@ -46,7 +46,7 @@ namespace Rubik.ScoopingGame
 
                 // bay theo path
                 seq.Join(coin.transform.DOPath(path, duration, PathType.CatmullRom)
-                    .SetEase(Ease.InOutQuad));
+                    .SetEase(Ease.Linear));
 
                 // nhỏ lại khi gần tới
                 seq.Join(coin.transform.DOScale(0.3f, duration));
@@ -58,5 +58,7 @@ namespace Rubik.ScoopingGame
                 });
             }
         }
+        
+        
     }
 }

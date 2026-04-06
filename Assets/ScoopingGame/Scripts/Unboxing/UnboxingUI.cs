@@ -103,6 +103,7 @@ namespace Rubik.ScoopingGame
 
         public void HideAll()
         {
+            transform.DOKill();
             gameObject.SetActive(false);
         }
     }

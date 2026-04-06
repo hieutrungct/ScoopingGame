@@ -12,13 +12,11 @@ namespace Rubik.ScoopingGame
         // public Claw claw;
         // public ArcadeLeverRotate joystick;
         public BlindBag blindBagPrefab;
-        // public Transform blindBagSpawnPoint;
-        // public CatchZone catchZone;
-        public SpoonController spooningController;
+        public SpoonController spoonController;
         public UnboxingController unboxingController;
         public BlindBagClassification blindBagClassification;
         public BlindBagFlyEffect blindBagFlyEffect;
-        public CollectedItems collectedItems;
+        public CollectedItemsController collectedItems;
         #endregion
         
 
@@ -39,17 +37,16 @@ namespace Rubik.ScoopingGame
         }
         
         
-        private void OnScoopingDone(List<ItemData> items)
+        public void OnScoopingDone(List<BlindBag> items)
         {
-            if (items == null || items.Count == 0) return;
 
-            // giả lập reward (tạm giữ logic cũ)
+            // giả lập reward 
             var rewards = SimulateRewards(items.Count);
 
-            unboxingController.unboxingUI.gameObject.SetActive(true);
+            unboxingController.ShowUnboxingUI(); 
             // classification.gameObject.SetActive(true);
 
-            unboxingController.Init(rewards); // 👉 bạn cần thêm hàm này
+            unboxingController.Init(rewards); 
         }
         
         // hiện tại chưa có dữ liệu từ client nên tạm thời sẽ giả lập bằng cách random dữ liệu blindbag, sau này có dữ liệu rồi thì sẽ sửa lại
