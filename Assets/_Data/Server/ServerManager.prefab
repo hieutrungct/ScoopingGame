@@ -1,0 +1,2540 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1162980741727256327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8878042897122277112}
+  - component: {fileID: 1364552144507286639}
+  m_Layer: 0
+  m_Name: CharacterClothManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8878042897122277112
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162980741727256327}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.001953125, y: -43.25879, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1364552144507286639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162980741727256327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc907860951ddcc4db3e3207ff4c67f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  CharacterCloth:
+    Keys: []
+    Values: []
+  CharacterClothData:
+    Keys: []
+    Values: []
+  CharacterClothDataByType:
+    Keys: []
+    Values: []
+--- !u!1 &1191848481033240035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7883342151254890667}
+  - component: {fileID: 4806460929910837556}
+  m_Layer: 0
+  m_Name: MercaShopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7883342151254890667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191848481033240035}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8905826860062542552}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4806460929910837556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191848481033240035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff093c42ea04de54198b710b177cbfb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  MercaShopPlayer:
+    Keys: []
+    Values: []
+  MercaShopDictionary:
+    Keys: []
+    Values: []
+  MercaShopRarityBonusDictionary:
+    Keys: []
+    Values: []
+  MercaShopLevelDictionary:
+    Keys: []
+    Values: []
+  MercaShopDataDictionary:
+    Keys: []
+    Values: []
+  IconShopList: []
+--- !u!1 &1423960386823955000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4583890840531212956}
+  - component: {fileID: 5990532516954374827}
+  m_Layer: 0
+  m_Name: ServerGameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4583890840531212956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423960386823955000}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5990532516954374827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423960386823955000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78ddf39091fb28a46a694bb1c72b5fe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  ServerGameData:
+    Keys: 
+    Values: []
+--- !u!1 &3928914346865604479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7397872748696767101}
+  - component: {fileID: 4281202820911357077}
+  m_Layer: 0
+  m_Name: CharacterPlayerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7397872748696767101
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928914346865604479}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.001953125, y: -43.25879, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4281202820911357077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928914346865604479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf7ab6663e2b2d44b9201d7f618969e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  CharacterPlayer:
+    Keys: []
+    Values: []
+  CharacterSelected: 
+  CharacterPlayerData:
+    Keys: []
+    Values: []
+--- !u!1 &4142871598057287125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3127090421003039287}
+  - component: {fileID: 3901227998356708837}
+  m_Layer: 0
+  m_Name: MercaRegionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3127090421003039287
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142871598057287125}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8905826860062542552}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3901227998356708837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4142871598057287125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e1fcd0aa0b6f244d9005c9761a9fce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  LimitLandPotRentDataDictionary:
+    Keys: []
+    Values: []
+--- !u!1 &4215712765745611306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4215712765745611305}
+  - component: {fileID: 4215712765745611304}
+  m_Layer: 0
+  m_Name: DataCenterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4215712765745611305
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712765745611306}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.001953125, y: -43.25879, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4215712765745611304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712765745611306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c82a0551ba9f3c74e8407d7e5df9bf9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  DataVersion:
+    VersionGame: 0
+    AvatarData: 0
+    AvatarBorderData: 0
+    CostChangeName: 0
+    SkinData: 0
+    RestaurentShopData: 0
+    ClothShopData: 0
+    ItemDataInfo: 0
+    DailyRewardData: 0
+    CharacterClothData: 0
+    CharacterPlayerData: 0
+    ServerGameData: 0
+    MercaShopData: 0
+    MercaItemData: 0
+    MercaStreetData: 0
+    MercaShopRarityData: 0
+    MercaShopLevelData: 0
+    MiniGameFishingData: 0
+    MiniGameFishingBagData: 0
+    MiniGameFishingLevelData: 0
+    MiniGameFishingDataPlayer: 0
+    MiniGameFishingRobData: 0
+    MiniGameFishingBaitData: 0
+    LimitLandPotRentData: 0
+    ExpPlayerData: 0
+    EnglishLanguageData: 0
+    MiniGameForestGameData: 0
+    PlayerChestDataHolder: 0
+  DataVersionText: {fileID: 4900000, guid: 6b938859d15984640b4aabf5d6216c4d, type: 3}
+  CheckVersionDone: 0
+  ShowDataName: 0
+--- !u!1 &4215712765916802144
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4215712765916802151}
+  - component: {fileID: 4215712765916802150}
+  m_Layer: 0
+  m_Name: LogSender
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4215712765916802151
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712765916802144}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.001953125, y: -43.25879, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4215712765916802150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712765916802144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9a54ae6386cb5d49850151304846bbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Version: 
+  LogHis:
+    Keys: []
+    Values: []
+--- !u!1 &4215712765985726872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4215712765985726879}
+  - component: {fileID: 4215712765985726878}
+  m_Layer: 5
+  m_Name: UserStorageManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4215712765985726879
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712765985726872}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.001953125, y: -43.25879}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4215712765985726878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712765985726872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad84efd8907a2b848871a1211f759055, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  CustomAvatarPath: 
+--- !u!1 &4215712766031281706
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4215712766031281705}
+  - component: {fileID: 4215712766031281704}
+  m_Layer: 0
+  m_Name: FriendManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4215712766031281705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766031281706}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.001953125, y: -43.25879, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4215712766031281704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766031281706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f380aaa949870514c90e7fc5ce2c3a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  FriendDatas:
+    Keys: []
+    Values: []
+  Friends:
+    Keys: []
+    Values: []
+  FriendRequests:
+    Keys: []
+    Values: []
+  FriendRequestsSent:
+    Keys: []
+    Values: []
+--- !u!1 &4215712766419242334
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4215712766419242333}
+  - component: {fileID: 4215712766419242332}
+  m_Layer: 0
+  m_Name: UserDataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4215712766419242333
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766419242334}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.001953125, y: -43.25879, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4215712766419242332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766419242334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 247b4ea02c5172249ac4420ea6eac047, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  UserData:
+    _id: 
+    PlayerID: 0
+    AccountID: 
+    DisplayName: 
+    FirstChangeName: 0
+    Server: 0
+    LastLogin: 0
+    Level: 0
+    Exp: 0
+  CostChangeName:
+    Type: 0
+    Amount: 0
+  ExpData:
+    Keys: 
+    Values: []
+--- !u!1 &4215712766422555310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4215712766422555309}
+  - component: {fileID: 4215712766422555308}
+  m_Layer: 0
+  m_Name: ShopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4215712766422555309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766422555310}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.001953125, y: -43.25879, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4215712766422555308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766422555310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea33a0a42f72024396422bacf2ffbd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  RestaurentShopData:
+    ShopList: []
+  ClothShopData:
+    ShopList: []
+--- !u!1 &4215712766474304310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4215712766474304309}
+  - component: {fileID: 4215712766474304308}
+  m_Layer: 0
+  m_Name: DailyRewardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4215712766474304309
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766474304310}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.001953125, y: -43.25879, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4215712766474304308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766474304310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579987c765fd2ed45a409a8d1e616e14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  DailyReward:
+    Version: 0
+    Day: 0
+  DailyRewardDatas: []
+--- !u!1 &4215712766598800332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4215712766598800323}
+  - component: {fileID: 4215712766598800322}
+  m_Layer: 0
+  m_Name: GiftCodeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4215712766598800323
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766598800332}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.001953125, y: -43.25879, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4215712766598800322
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766598800332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4ef73496e89ea45a3439aa93fd2c45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  UserGiftCode:
+    OldCode: []
+    OldType: []
+--- !u!1 &4215712766611160594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4215712766611160593}
+  - component: {fileID: 4215712766611160592}
+  - component: {fileID: 4843711720175757387}
+  m_Layer: 0
+  m_Name: ServerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4215712766611160593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766611160594}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8228335415845958367}
+  - {fileID: 4464613158874098452}
+  - {fileID: 1266617270256439797}
+  - {fileID: 3277838485698448749}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4215712766611160592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766611160594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d2ab4ff7cd376f42862b97b4b844df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  IsLoad: 0
+  LoadAddressableDone: 0
+  TimeServer: 0
+  LastAPIResponseData:
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+  - Url_API: 
+    Status: 0
+    Error: 
+    UserDataResponse:
+      _id: 
+      AccountID: 
+      Server: 0
+      PlayerID: 0
+      Level: 0
+      Exp: 0
+      LastLogin: 0
+    Update_Item: []
+    Update_DisplayName:
+      DisplayeName: 
+      FirstChange: 0
+    AvatarUpdate:
+      Own: 
+      Current: -2
+    AvatarBorderUpdate:
+      Own: 
+      Current: -1
+    AvatarCustomUpdates: []
+    AvatarCustomPath: 
+    SkinUpdate:
+      Own: 
+      Current: -1
+    Update_GiftCode:
+      OldCode: []
+      OldType: []
+    UserDataShorts: []
+    Update_Friend: []
+    Update_PlayerMail: []
+    DailyReward:
+      Version: 0
+      Day: 0
+    Update_CharacterCloth: []
+    Update_CharacterPlayer: []
+    CharacterSelected: 
+    Update_MercaStreetServerGeneratedRandom: []
+    Update_MercaShop: []
+    Update_MercaItem: []
+    Update_MercaStreet: []
+    Update_MercaLandPotRent: []
+    Update_PlayerFishingData:
+      LevelFishing: 0
+      ExpFishing: 0
+      BagTimeExpand: 0
+      TimeFishing: 0
+    Update_PlayerFishingCollection: []
+    Update_PlayerFishingFish: []
+    Update_FishSellingData:
+      FishIds: []
+      Incomes: []
+    Result_CatchFishData:
+      Fishes: []
+      Items: []
+    RewardData:
+      Title: 
+      Items: []
+      ClothItems: []
+    TimeServer: 0
+--- !u!114 &4843711720175757387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215712766611160594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d02c544f9f4a04bb4c4cf732be1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+--- !u!1 &4224149206540272488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5148436023183458466}
+  - component: {fileID: 6159365753271607488}
+  m_Layer: 0
+  m_Name: MercaStreetManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5148436023183458466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4224149206540272488}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8905826860062542552}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6159365753271607488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4224149206540272488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63f75d5e8b06a9d4e9ec380b339b1633, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  MercaStreetServerGeneratedRandom: []
+  MercaStreetDictionary:
+    Keys: []
+    Values: []
+  MercaLandPotRent:
+    Keys: []
+    Values: []
+  MercaStreetDataDictionary:
+    Keys: []
+    Values: []
+  Test_Rent_Land_Pot_StreetId: 1234567890
+  Test_Rent_Land_Pot_LandPotId: 1234567890
+--- !u!1 &5371513317747244233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1266617270256439797}
+  - component: {fileID: 6705805800013319492}
+  m_Layer: 0
+  m_Name: SystemMamanger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1266617270256439797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5371513317747244233}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4215712766611160593}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6705805800013319492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5371513317747244233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 080db6ae550354c4fa5822f83566329f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  SystemData:
+    Versions: []
+    API_Url: http://15.235.180.137:4080
+    Socket_Url: ws://15.235.180.137:4000
+    Colyseus_Url: http://15.235.180.137:4000
+    AppStore_Url: 
+    GooglePlay_Url: 
+--- !u!1 &5446203548564376895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3277838485698448749}
+  - component: {fileID: 448701521755763045}
+  m_Layer: 0
+  m_Name: BannerManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3277838485698448749
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5446203548564376895}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4215712766611160593}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &448701521755763045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5446203548564376895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a9d7f811f10a884d9b037212c276d43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  BannerTopUI: {fileID: 0}
+--- !u!1 &5982310704005777755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6802986644187839915}
+  - component: {fileID: 6487704018029788325}
+  m_Layer: 0
+  m_Name: PlayerMailManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6802986644187839915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5982310704005777755}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.001953125, y: -43.25879, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6487704018029788325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5982310704005777755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69f3f3121511b84a8510c5684ba785b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  PlayerMails:
+    Keys: []
+    Values: []
+  IsNoticMail: 0
+--- !u!1 &7034224657376083568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4464613158874098452}
+  - component: {fileID: 6479292685647889225}
+  m_Layer: 0
+  m_Name: GameLogic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4464613158874098452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7034224657376083568}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.001953125, y: 43.25879, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8878042897122277112}
+  - {fileID: 7397872748696767101}
+  - {fileID: 4215712766474304309}
+  - {fileID: 4215712765745611305}
+  - {fileID: 4215712766031281705}
+  - {fileID: 4215712766598800323}
+  - {fileID: 4215712766323742503}
+  - {fileID: 4215712765916802151}
+  - {fileID: 6802986644187839915}
+  - {fileID: 4583890840531212956}
+  - {fileID: 4215712766422555309}
+  - {fileID: 4215712766419242333}
+  - {fileID: 8571836527449622431}
+  - {fileID: 4215712765985726879}
+  - {fileID: 8905826860062542552}
+  - {fileID: 2057400675699234599}
+  m_Father: {fileID: 4215712766611160593}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6479292685647889225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7034224657376083568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05d02c544f9f4a04bb4c4cf732be1538, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+--- !u!1 &8373499058155070611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8905826860062542552}
+  m_Layer: 0
+  m_Name: MercaWorld
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8905826860062542552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8373499058155070611}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5148436023183458466}
+  - {fileID: 7883342151254890667}
+  - {fileID: 2271260450730161106}
+  - {fileID: 3127090421003039287}
+  m_Father: {fileID: 4464613158874098452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1289774638672730285
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4215712766611160593}
+    m_Modifications:
+    - target: {fileID: 2216111241698594694, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+      propertyPath: m_Name
+      value: Authen
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194175242819267186, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001953125
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194175242819267186, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.25879
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194175242819267186, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194175242819267186, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194175242819267186, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194175242819267186, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194175242819267186, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194175242819267186, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194175242819267186, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194175242819267186, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+--- !u!4 &8228335415845958367 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7194175242819267186, guid: aa640c04885ced54d925c12351d02caf, type: 3}
+  m_PrefabInstance: {fileID: 1289774638672730285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2519272749277589949
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4464613158874098452}
+    m_Modifications:
+    - target: {fileID: 1763011211270383258, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763011211270383258, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763011211270383258, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763011211270383258, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763011211270383258, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763011211270383258, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763011211270383258, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763011211270383258, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763011211270383258, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763011211270383258, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763011211270383261, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+      propertyPath: m_Name
+      value: ItemDataManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+--- !u!4 &4215712766323742503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1763011211270383258, guid: 2e01d4310a14da348b572354178c964b, type: 3}
+  m_PrefabInstance: {fileID: 2519272749277589949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3040470667505495489
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4464613158874098452}
+    m_Modifications:
+    - target: {fileID: 3944221940337310438, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944221940337310438, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944221940337310438, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944221940337310438, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944221940337310438, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944221940337310438, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944221940337310438, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944221940337310438, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944221940337310438, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3944221940337310438, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842386681004023124, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+      propertyPath: m_Name
+      value: PlayerChestManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+--- !u!4 &2057400675699234599 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3944221940337310438, guid: 456aa0f824b7ce94685ff3e6f8bca1cf, type: 3}
+  m_PrefabInstance: {fileID: 3040470667505495489}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4215712765865315289
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4464613158874098452}
+    m_Modifications:
+    - target: {fileID: 5509168480351489088, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+      propertyPath: m_Name
+      value: UserProfileManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509168480351489094, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.001953125
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509168480351489094, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -43.25879
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509168480351489094, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509168480351489094, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509168480351489094, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509168480351489094, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509168480351489094, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509168480351489094, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509168480351489094, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509168480351489094, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+--- !u!4 &8571836527449622431 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5509168480351489094, guid: eebc52abd8813bd46b8e2a425bb5efbd, type: 3}
+  m_PrefabInstance: {fileID: 4215712765865315289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6435973344719209307
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8905826860062542552}
+    m_Modifications:
+    - target: {fileID: 3345745227889298681, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+      propertyPath: m_Name
+      value: MercaItemManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103714107923968137, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103714107923968137, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103714107923968137, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103714107923968137, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103714107923968137, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103714107923968137, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103714107923968137, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103714107923968137, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103714107923968137, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5103714107923968137, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+--- !u!4 &2271260450730161106 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5103714107923968137, guid: dec623f36d2935a438fa3e6ba4bf82d1, type: 3}
+  m_PrefabInstance: {fileID: 6435973344719209307}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5509168480351489088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5509168480351489094}
+  - component: {fileID: 5509168480351489089}
+  m_Layer: 0
+  m_Name: UserProfileManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5509168480351489094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5509168480351489088}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 943.1735, y: 434.29636, z: -2.9912858}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5509168480351489089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5509168480351489088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cac858c2855b8640a426850accb4e66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funnyCheck: 0
+  AvatarBorderDatas:
+  - Index: 0
+    Lock: 0
+    UnlockData:
+      UnlockType: 0
+      LevelUnlock: 0
+      Price: []
+      PriceInstead: []
+  AvatarDatas:
+  - Index: 0
+    Lock: 0
+    UnlockData:
+      UnlockType: 0
+      LevelUnlock: 0
+      Price: []
+      PriceInstead: []
+  SkinDatas: []
+  AvatarPlayer:
+    Own: 
+    Current: -1
+  AvatarBorderPlayer:
+    Own: 
+    Current: -1
+  SkinPlayer:
+    Own: 
+    Current: -1
+  EmojiPlayer:
+    Own: 
+  AvatarSpriteDefault: {fileID: 21300000, guid: 1da14c3e49d0d9a45abb132442ef0fc0, type: 3}
+  AvatarSprites:
+  - {fileID: 21300000, guid: 1da14c3e49d0d9a45abb132442ef0fc0, type: 3}
+  - {fileID: 21300000, guid: aca068ea0343d2a4db486e570c3df1cd, type: 3}
+  - {fileID: 21300000, guid: 6995dea768b9c1045a8c2e3a3efb01c2, type: 3}
+  - {fileID: 21300000, guid: 15a8bda6a4a26f2408838dcd943cbef6, type: 3}
+  - {fileID: 21300000, guid: cf72e32afe1bcaa47a9f636b7ab5d714, type: 3}
+  - {fileID: 21300000, guid: 66d9bd1a1b7f1e045a846688dc5280c0, type: 3}
+  - {fileID: 21300000, guid: 724517578a90c7e499c254a05f4fbaa7, type: 3}
+  - {fileID: 21300000, guid: 6229c1345bf46e04b92607489ece07a9, type: 3}
+  - {fileID: 21300000, guid: 08cf38d0a2d3c30468f84698d1931439, type: 3}
+  - {fileID: 21300000, guid: 66972edb0f301ec4588076249e037503, type: 3}
+  - {fileID: 21300000, guid: 54d124c02a07d3242accec0bd91da28f, type: 3}
+  - {fileID: 21300000, guid: 717deb9354d752b40bc5350ebdd1cfc8, type: 3}
+  - {fileID: 21300000, guid: b04f885d80c6fff4dbdbfea8a917cb8a, type: 3}
+  - {fileID: 21300000, guid: d9ad9351e59168a43b732273411d1c74, type: 3}
+  - {fileID: 21300000, guid: 3cc483a64ad5d214481443216e7d4da9, type: 3}
+  - {fileID: 21300000, guid: 39fd2e59f326d724e9e85f4b4019a213, type: 3}
+  - {fileID: 21300000, guid: c6d3e9266e8d7774ab253e49f1dc6237, type: 3}
+  - {fileID: 21300000, guid: c382531184858e146b204953fe94358e, type: 3}
+  - {fileID: 21300000, guid: c41f1298a01f71145b09e964ae0c8dcb, type: 3}
+  - {fileID: 21300000, guid: 705c4f4036d511447b2f811994564dcf, type: 3}
+  - {fileID: 21300000, guid: 5b52ac087c1bb3445b4da02e64e3309c, type: 3}
+  - {fileID: 21300000, guid: 8dcb024b4b9add941b3995eb23cdd48a, type: 3}
+  - {fileID: 21300000, guid: 7d25883854ed8354e930791c8c3c55c1, type: 3}
+  - {fileID: 21300000, guid: 1d26da5db7d258d4b853487fadd4e342, type: 3}
+  - {fileID: 21300000, guid: 281f5ed80504a7d4689c7e51839cf289, type: 3}
+  - {fileID: 21300000, guid: d2043650bab0b434892b3de93d269bac, type: 3}
+  - {fileID: 21300000, guid: 13e4f61f80a22dd44bcb7c7352050377, type: 3}
+  - {fileID: 21300000, guid: f6d468b0910abae4b99c7ffa8d0ec461, type: 3}
+  - {fileID: 21300000, guid: 28d773d7f6cb6e4449e88199a9df3949, type: 3}
+  - {fileID: 21300000, guid: 9cc4958153a889f4b883215e29eeebf8, type: 3}
+  - {fileID: 21300000, guid: 9c55ed0e02deb1540a26304da747ad0e, type: 3}
+  - {fileID: 21300000, guid: a46649f5432cca64996c69dd4e0d3967, type: 3}
+  - {fileID: 21300000, guid: 2f0a104110527934ba25bc8b87cf74ee, type: 3}
+  - {fileID: 21300000, guid: 13817ba1acb1fde479200c2ed412e499, type: 3}
+  - {fileID: 21300000, guid: 1f1b8ff561fab934aaae15cb4758842a, type: 3}
+  AvatarBorderSpriteDefault: {fileID: 21300000, guid: 45946a6f33c9843b1b02ba5e0df2c122, type: 3}
+  AvatarBorderSprites:
+  - {fileID: 21300000, guid: 695315d059c5a44a3ac75d6ff2b303f7, type: 3}
+  - {fileID: 21300000, guid: a0865d818466447edb9f7324a23a37c9, type: 3}
+  - {fileID: 21300000, guid: 66713ebeb27e5458ab99d56806fdaca5, type: 3}
+  - {fileID: 21300000, guid: ce696151aa73f4aa8a47d5b00a32bed0, type: 3}
+  - {fileID: 21300000, guid: a42c17f97412d4c57b6058456062f329, type: 3}
+  - {fileID: 21300000, guid: 01e1819cb70344a41b5bc8385b250552, type: 3}
+  - {fileID: 21300000, guid: 8e18b3a86bc10436584b8d995979a65c, type: 3}
+  SkinUIObjects:
+  - {fileID: 94568058961641733, guid: dedbeb5822b44ac469722a9c08063a37, type: 3}
+  - {fileID: 7146215829136458092, guid: 5447b2b2f563a124ea36cbacb183d98d, type: 3}
+  - {fileID: 1220658710860849737, guid: accf3ad0d5b702b4490a699a16fe6952, type: 3}
+  - {fileID: 6252405626380887828, guid: 2891164de45f0cd4ca391b05d31d1c3b, type: 3}
+  - {fileID: 3247707229383565568, guid: 1a884b3f932671346ad1d1ae6f82f3a0, type: 3}
+  EmojiObjects:
+  - {fileID: 856037824181794435, guid: c492133b084944be2b00935dee292c1a, type: 3}
+  - {fileID: 6374637013135950497, guid: 58191a0e365014587b5b5c62e8bac5e0, type: 3}
+  - {fileID: 3301192953113592492, guid: 78fb4f798b7814681a219326b82fc7e2, type: 3}
+  - {fileID: 2419961267839269658, guid: 79e7b4ac9d43143a19beaefc7c56ec65, type: 3}
+  - {fileID: 9037884370851157187, guid: 8089de8a52d1542eb87701759768e901, type: 3}
+  - {fileID: 4334996322438075839, guid: 37822549eeca44f508d92049665c2543, type: 3}
+  - {fileID: 1671428114195028216, guid: 6845c448e58dd44a1b6ecf4fbca705dc, type: 3}
+  - {fileID: 3066322674982548644, guid: 2bb261a7622fd476c80c3774842d0f3e, type: 3}
+  - {fileID: 4515485828302087427, guid: 8898a7ad51b64451fbbb7b2d4425d370, type: 3}
+  - {fileID: 2382634566208557457, guid: e4e4787b8ebcd463d8fdb5b893344f11, type: 3}
+  - {fileID: 577032370890365190, guid: b9d483eccc2b7405eb436826e72903b3, type: 3}
+  - {fileID: 8765627646636577328, guid: 2ba67205a8d874bd6908d49846b9a508, type: 3}
+  EmojiSprites:
+  - {fileID: 21300000, guid: 265c765fb1438410b81064a82445390d, type: 3}
+  - {fileID: 21300000, guid: 51bb3f4bf58694cb4acc9f3b53def6dd, type: 3}
+  - {fileID: 21300000, guid: 8d70464821cf3482ba5626bd32f586fd, type: 3}
+  - {fileID: 21300000, guid: b17e35f923d9b439593856efea22a362, type: 3}
+  - {fileID: 21300000, guid: 8f61b1d51dd534edf9c2f9cc56b4e3a4, type: 3}
+  - {fileID: 21300000, guid: 97fae5b4d4da8488ca7b02707f83def0, type: 3}
+  - {fileID: 21300000, guid: 666360af105194c78b4cba64604af13f, type: 3}
+  - {fileID: 21300000, guid: 676f9e5fc6852436fa7026b2dfcd1cf8, type: 3}
+  - {fileID: 21300000, guid: 9026baac2329b459a90261a13b83a5df, type: 3}
+  - {fileID: 21300000, guid: 0f84d8ba7511548bbbb923d31a7d8763, type: 3}
+  - {fileID: 21300000, guid: 9bd4ff6ae23eb4891a70ddd5293cc21c, type: 3}
+  - {fileID: 21300000, guid: 46ee42526759b4eeb8c919db22d53dd9, type: 3}
+  SkinSelectedIndex: 0
+  UserDataShortCache:
+    Keys: []
+    Values: []
