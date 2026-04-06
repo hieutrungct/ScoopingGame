@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Colyseus;
 using NTPackage.Functions;
-using Rubik.Chat;
 using Rubik.UserData;
 using UnityEngine;
 
@@ -144,11 +143,9 @@ namespace Rubik.MsgDelivery
                 _room.OnMessage<MsgData>(MsgDeliveryKey.System, SystemMsg);
                 _room.OnMessage<CheckUserOnlineData>(MsgDeliveryKey.CheckUserOnline, OnCheckUserOnline);
                 _room.OnMessage<string>(MsgDeliveryKey.RegisterChannel, OnRegisterChannel);
-                _room.OnMessage<ChatMsg>(MsgDeliveryKey.ChatMsg, ChatService.Instance.OnChatMsg);
                 _room.OnMessage<string>(MsgDeliveryKey.NotificationMsg, NotificationMsgManager.Instance.OnNotificationMsg);
 
                 this.SessionId = _room.SessionId;
-                ChatService.Instance.RegisterChannel();
                 this.RegisterPersonalChannel();
 
                 this.IsConnecting = false;

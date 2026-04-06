@@ -22,7 +22,6 @@ namespace Rubik.Manager
     using Colyseus;
     using NTPackage;
     using Rubik.SystemData;
-    using Rubik.Chat;
     using Rubik.ServerGame;
     using Rubik.UI;
     using Rubik.NotificationMsg;
@@ -38,6 +37,8 @@ namespace Rubik.Manager
         public string Url_API;
         public int Status;
         public string Error;
+        
+        public UserDataResponse UserDataResponse;
 
         public long TimeServer;
     }

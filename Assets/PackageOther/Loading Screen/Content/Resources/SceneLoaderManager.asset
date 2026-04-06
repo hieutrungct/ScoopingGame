@@ -53,7 +53,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 8883ebf93bee8de4192ddbf1155cbe1b, type: 3}
     - {fileID: 21300000, guid: d48c91e44021ae243ac715780524f2ac, type: 3}
     - {fileID: 21300000, guid: 2569d0627ae6f9e449c22ec21ec55011, type: 3}
-  - SceneName: Home
+  - SceneName: URP2DSceneTemplate
     SceneAsset: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
     DisplayName: GamePlay
     Description: 
@@ -203,7 +203,7 @@ MonoBehaviour:
     LoadingType: 0
     FakeLoadingTime: 2
     Backgrounds: []
-  - SceneName: Home
+  - SceneName: URP2DSceneTemplate
     SceneAsset: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
     DisplayName: GamePlay
     Description: 

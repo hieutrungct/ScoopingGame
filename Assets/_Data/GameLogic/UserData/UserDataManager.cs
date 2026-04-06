@@ -16,13 +16,14 @@ namespace Rubik.UserData
 {
     public class UserDataConfig
     {
+        public const string API_UserData_LightLogin = "/api/multiplayer/user_data/light_login";
         public const string API_UserData_Login = "/api/multiplayer/user_data/login";
     }
 
     public class UserDataManager : NTBehaviour
     {
         #region Player Data
-        public UserData UserData;   
+        public UserData UserData;
         #endregion
 
         #region Game Data
@@ -66,7 +67,7 @@ namespace Rubik.UserData
 
         public void UpdateName(DisplayNameData nameData)
         {
-            
+
         }
 
         public string GetUserID()
@@ -107,6 +108,23 @@ namespace Rubik.UserData
             }
         }
 
+        public IEnumerator LightLogin(Action<bool> done = null)
+        {
+            if (AccountManager.Instance.Account._id.Length > 0)
+            {
+                JSONNode jdata = new JSONObject();
+                jdata["accountID"] = AccountManager.Instance.Account._id;
+                jdata["server"] = 0;
+                yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + UserDataConfig.API_UserData_LightLogin, (data) =>
+                {
+                    ServerManager.instance.APIResponse(data.downloadHandler.text);
+                    done?.Invoke(true);
+                    done = null;
+                });
+                done?.Invoke(false);
+            }
+        }
+
         public IEnumerator GetUserShortData(string userID, Action<UserDataShort> done = null)
         {
             // TODO: Get User Info
@@ -120,7 +138,7 @@ namespace Rubik.UserData
         #region Get
         public int GetServerPlay()
         {
-            if(this.UserData == null) return 0;
+            if (this.UserData == null) return 0;
             return this.UserData.Server;
         }
 
@@ -146,8 +164,8 @@ namespace Rubik.UserData
         #endregion
 
         #region Set
-        
-        
+
+
         #endregion
     }
 }
