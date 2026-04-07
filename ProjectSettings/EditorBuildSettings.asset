@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Loading.unity
     guid: 3d3bf20c9ad241c4895e950b4a561689
+  - enabled: 1
+    path: Assets/_Scenes/MiniGameScooping.unity
+    guid: 21e7bacb17aa147439e2356728503513
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

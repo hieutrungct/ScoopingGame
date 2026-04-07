@@ -13,7 +13,7 @@ namespace Rubik.Config
     public class SceneConfig
     {
         public const string Login_Screen = "Login";
-        public const string Home_Screen = "Home";
+        public const string MiniGameScooping_Screen = "MiniGameScooping";
         public const string Loading_Screen = "Loading";
     }
 

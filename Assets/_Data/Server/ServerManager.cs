@@ -144,7 +144,7 @@ namespace Rubik.Manager
                 // else
                 // {
                     // Change to Home Screen
-                    yield return SceneController.Instance.LoadScreenProgress(SceneConfig.Home_Screen);
+                    yield return SceneController.Instance.LoadScreenProgress(SceneConfig.MiniGameScooping_Screen);
                 // }
 
 
