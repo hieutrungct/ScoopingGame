@@ -206,7 +206,7 @@ namespace Rubik.Manager
                 PopupManager.Instance.OffUI(PopupCode.LoadingUI);
             }
         }
-
+    
         public void GameStart()
         {
             NTLog.LogMessage("GameStart");
