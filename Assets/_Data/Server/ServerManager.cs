@@ -22,9 +22,9 @@ namespace Rubik.Manager
     using Colyseus;
     using NTPackage;
     using Rubik.SystemData;
-    using Rubik.ServerGame;
     using Rubik.UI;
     using Rubik.NotificationMsg;
+    using Rubik.ScoopingGame;
 
     public class APIResponse
     {
@@ -39,6 +39,7 @@ namespace Rubik.Manager
         public string Error;
         
         public UserDataResponse UserDataResponse;
+        public UserScoopTiny ScoopTiny;
 
         public long TimeServer;
     }
@@ -174,11 +175,11 @@ namespace Rubik.Manager
             EventListenerManager.instance.PostEvent(EventCode.BattleDeck_DoneLoad, new LoadingData(CheckVersion / MaxLoad, Lean.Localization.LeanLocalization.GetTranslationText("loading_checkversion", "Check Version")));
             yield return SystemManager.Instance.IEGetSystemData();
             yield return DataCenterManager.Instance.ProcessCheckVersion();
-            yield return LoadAddressable();
             EventListenerManager.instance.PostEvent(EventCode.BattleDeck_DoneLoad, new LoadingData(AssetsLoading / MaxLoad, Lean.Localization.LeanLocalization.GetTranslationText("loading_assets", "Assets Loading")));
+            yield return LoadAddressable();
             EventListenerManager.instance.PostEvent(EventCode.BattleDeck_DoneLoad, new LoadingData(LoadingGameData / MaxLoad, Lean.Localization.LeanLocalization.GetTranslationText("loading_gamedata", "Game Data Loading")));
             yield return UserDataManager.Instance.LoadData();
-            yield return ServerGameManager.Instance.LoadData();
+            yield return ScoopTinyManager.Instance.LoadData();
             yield return new WaitForSeconds(TimeWait);
             this.AutoLogin();
         }
@@ -313,12 +314,11 @@ namespace Rubik.Manager
 
             #region Stream Update
             // Update User Data Response
-            
-
-            // Update Arena
+            UserDataManager.Instance.UpdateUserData(apiResponseData.UserDataResponse);
             #endregion
             #region Normal Update
-            // Update Item
+            // Update Scoop Tiny
+            ScoopTinyManager.Instance.UpdateUserScoopTiny(apiResponseData.ScoopTiny);
             
 
             this.TimeServer = apiResponse.Data.TimeServer;

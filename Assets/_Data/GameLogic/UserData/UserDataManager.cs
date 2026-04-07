@@ -16,8 +16,7 @@ namespace Rubik.UserData
 {
     public class UserDataConfig
     {
-        public const string API_UserData_LightLogin = "/api/multiplayer/user_data/light_login";
-        public const string API_UserData_Login = "/api/multiplayer/user_data/login";
+        public const string API_UserData_Login = "/api/multiplayer/scoop_tiny/login";
     }
 
     public class UserDataManager : NTBehaviour
@@ -62,7 +61,22 @@ namespace Rubik.UserData
 
         public void UpdateUserData(UserDataResponse userDataResponse)
         {
-
+            if(userDataResponse == null || userDataResponse._id.Length == 0){
+                return;
+            }
+            this.UserData = new UserData();
+            this.UserData._id = userDataResponse._id;
+            this.UserData.AccountID = userDataResponse.AccountID;
+            this.UserData.Server = userDataResponse.Server;
+            this.UserData.PlayerID = userDataResponse.PlayerID;
+            this.UserData.Level = userDataResponse.Level;
+            this.UserData.Exp = userDataResponse.Exp;
+            this.UserData.LastLogin = userDataResponse.LastLogin;
+            this.UserData.Server = userDataResponse.Server;
+            this.UserData.PlayerID = userDataResponse.PlayerID;
+            this.UserData.Level = userDataResponse.Level;
+            this.UserData.Exp = userDataResponse.Exp;
+            this.UserData.LastLogin = userDataResponse.LastLogin;
         }
 
         public void UpdateName(DisplayNameData nameData)
@@ -101,23 +115,6 @@ namespace Rubik.UserData
                 {
                     ServerManager.instance.APIResponse(data.downloadHandler.text);
                     EventListenerManager.instance.PostEvent(EventCode.BattleDeck_TorchUpdate, this.UserData);
-                    done?.Invoke(true);
-                    done = null;
-                });
-                done?.Invoke(false);
-            }
-        }
-
-        public IEnumerator LightLogin(Action<bool> done = null)
-        {
-            if (AccountManager.Instance.Account._id.Length > 0)
-            {
-                JSONNode jdata = new JSONObject();
-                jdata["accountID"] = AccountManager.Instance.Account._id;
-                jdata["server"] = 0;
-                yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + UserDataConfig.API_UserData_LightLogin, (data) =>
-                {
-                    ServerManager.instance.APIResponse(data.downloadHandler.text);
                     done?.Invoke(true);
                     done = null;
                 });

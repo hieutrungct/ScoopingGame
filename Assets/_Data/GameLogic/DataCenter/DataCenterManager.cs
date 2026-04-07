@@ -13,7 +13,7 @@ namespace Rubik.DataCenter
 {
     public class DataCenterConfig
     {
-        public const string API_DataCenter_CheckVersion = "/api/multiplayer/data_center/check_version";
+        public const string API_DataCenter_CheckVersion = "/api/multiplayer/scoop_tiny/check_version";
     }
 
     public class DataCenterManager : NTBehaviour
@@ -70,22 +70,7 @@ namespace Rubik.DataCenter
                 {
                     DataName.DataVersion,
                     DataName.VersionGame,
-                    DataName.AvatarData,
-                    DataName.AvatarBorderData,
-                    DataName.CostChangeName,
-                    DataName.SkinData,
-                    DataName.RestaurentShopData,
-                    DataName.ClothShopData,
-                    DataName.ItemDataInfo,
-                    DataName.DailyRewardData,
-                    DataName.CharacterClothData,
-                    DataName.CharacterPlayerData,
-                    DataName.ServerGameData,
-                    DataName.MercaShopData,
-                    DataName.MercaItemData,
-                    DataName.MercaStreetData,
-                    DataName.MercaShopRarityData,
-                    DataName.MercaShopLevelData,
+                    DataName.DataScoopTiny,
                 };
                 bool isAllDataDone = true;
                 foreach (DataName dataName in dataNames)
@@ -119,140 +104,10 @@ namespace Rubik.DataCenter
                     this.SetData(DataName.VersionGame, jdata["Data"]["VersionGame"].ToString());
                     this.DataVersion.VersionGame = dataVersion.VersionGame;
                 }
-                if (jdata["Data"]["AvatarData"] != null)
+                if (jdata["Data"]["DataScoopTiny"] != null)
                 {
-                    this.SetData(DataName.AvatarData, jdata["Data"]["AvatarData"].ToString());
-                    this.DataVersion.AvatarData = dataVersion.AvatarData;
-                }
-                if (jdata["Data"]["AvatarBorderData"] != null)
-                {
-                    this.SetData(DataName.AvatarBorderData, jdata["Data"]["AvatarBorderData"].ToString());
-                    this.DataVersion.AvatarBorderData = dataVersion.AvatarBorderData;
-                }
-                if (jdata["Data"]["CostChangeName"] != null)
-                {
-                    this.SetData(DataName.CostChangeName, jdata["Data"]["CostChangeName"].ToString());
-                    this.DataVersion.CostChangeName = dataVersion.CostChangeName;
-                }
-                if (jdata["Data"]["SkinData"] != null)
-                {
-                    this.SetData(DataName.SkinData, jdata["Data"]["SkinData"].ToString());
-                    this.DataVersion.SkinData = dataVersion.SkinData;
-                }
-                if (jdata["Data"]["RestaurentShopData"] != null)
-                {
-                    this.SetData(DataName.RestaurentShopData, jdata["Data"]["RestaurentShopData"].ToString());
-                    this.DataVersion.RestaurentShopData = dataVersion.RestaurentShopData;
-                }
-                if (jdata["Data"]["ClothShopData"] != null)
-                {
-                    this.SetData(DataName.ClothShopData, jdata["Data"]["ClothShopData"].ToString());
-                    this.DataVersion.ClothShopData = dataVersion.ClothShopData;
-                }
-                if (jdata["Data"]["ItemDataInfo"] != null)
-                {
-                    this.SetData(DataName.ItemDataInfo, jdata["Data"]["ItemDataInfo"].ToString());
-                    this.DataVersion.ItemDataInfo = dataVersion.ItemDataInfo;
-                }
-                if (jdata["Data"]["DailyRewardData"] != null)
-                {
-                    this.SetData(DataName.DailyRewardData, jdata["Data"]["DailyRewardData"].ToString());
-                    this.DataVersion.DailyRewardData = dataVersion.DailyRewardData;
-                }
-                if (jdata["Data"]["CharacterClothData"] != null)
-                {
-                    this.SetData(DataName.CharacterClothData, jdata["Data"]["CharacterClothData"].ToString());
-                    this.DataVersion.CharacterClothData = dataVersion.CharacterClothData;
-                }
-                if (jdata["Data"]["CharacterPlayerData"] != null)
-                {
-                    this.SetData(DataName.CharacterPlayerData, jdata["Data"]["CharacterPlayerData"].ToString());
-                    this.DataVersion.CharacterPlayerData = dataVersion.CharacterPlayerData;
-                }
-                if (jdata["Data"]["ServerGameData"] != null)
-                {
-                    this.SetData(DataName.ServerGameData, jdata["Data"]["ServerGameData"].ToString());
-                    this.DataVersion.ServerGameData = dataVersion.ServerGameData;
-                }
-                if (jdata["Data"]["MercaShopData"] != null)
-                {
-                    this.SetData(DataName.MercaShopData, jdata["Data"]["MercaShopData"].ToString());
-                    this.DataVersion.MercaShopData = dataVersion.MercaShopData;
-                }
-                if (jdata["Data"]["MercaItemData"] != null)
-                {
-                    this.SetData(DataName.MercaItemData, jdata["Data"]["MercaItemData"].ToString());
-                    this.DataVersion.MercaItemData = dataVersion.MercaItemData;
-                }
-                if (jdata["Data"]["MercaStreetData"] != null)
-                {
-                    this.SetData(DataName.MercaStreetData, jdata["Data"]["MercaStreetData"].ToString());
-                    this.DataVersion.MercaStreetData = dataVersion.MercaStreetData;
-                }
-                if (jdata["Data"]["MercaShopRarityData"] != null)
-                {
-                    this.SetData(DataName.MercaShopRarityData, jdata["Data"]["MercaShopRarityData"].ToString());
-                    this.DataVersion.MercaShopRarityData = dataVersion.MercaShopRarityData;
-                }
-                if (jdata["Data"]["MercaShopLevelData"] != null)
-                {
-                    this.SetData(DataName.MercaShopLevelData, jdata["Data"]["MercaShopLevelData"].ToString());
-                    this.DataVersion.MercaShopLevelData = dataVersion.MercaShopLevelData;
-                }
-                if (jdata["Data"]["LimitLandPotRentData"] != null)
-                {
-                    this.SetData(DataName.LimitLandPotRentData, jdata["Data"]["LimitLandPotRentData"].ToString());
-                    this.DataVersion.LimitLandPotRentData = dataVersion.LimitLandPotRentData;
-                }
-                if (jdata["Data"]["ExpPlayerData"] != null)
-                {
-                    this.SetData(DataName.ExpPlayerData, jdata["Data"]["ExpPlayerData"].ToString());
-                    this.DataVersion.ExpPlayerData = dataVersion.ExpPlayerData;
-                }
-                if (jdata["Data"]["MiniGameFishingData"] != null)
-                {
-                    this.SetData(DataName.MiniGameFishingData, jdata["Data"]["MiniGameFishingData"].ToString());
-                    this.DataVersion.MiniGameFishingData = dataVersion.MiniGameFishingData;
-                }
-                if (jdata["Data"]["MiniGameFishingBagData"] != null)
-                {
-                    this.SetData(DataName.MiniGameFishingBagData, jdata["Data"]["MiniGameFishingBagData"].ToString());
-                    this.DataVersion.MiniGameFishingBagData = dataVersion.MiniGameFishingBagData;
-                }
-                if (jdata["Data"]["MiniGameFishingLevelData"] != null)
-                {
-                    this.SetData(DataName.MiniGameFishingLevelData, jdata["Data"]["MiniGameFishingLevelData"].ToString());
-                    this.DataVersion.MiniGameFishingLevelData = dataVersion.MiniGameFishingLevelData;
-                }
-                if (jdata["Data"]["MiniGameFishingDataPlayer"] != null)
-                {
-                    this.SetData(DataName.MiniGameFishingDataPlayer, jdata["Data"]["MiniGameFishingDataPlayer"].ToString());
-                    this.DataVersion.MiniGameFishingDataPlayer = dataVersion.MiniGameFishingDataPlayer;
-                }
-                if (jdata["Data"]["MiniGameFishingRobData"] != null)
-                {
-                    this.SetData(DataName.MiniGameFishingRobData, jdata["Data"]["MiniGameFishingRobData"].ToString());
-                    this.DataVersion.MiniGameFishingRobData = dataVersion.MiniGameFishingRobData;
-                }
-                if (jdata["Data"]["MiniGameFishingBaitData"] != null)
-                {
-                    this.SetData(DataName.MiniGameFishingBaitData, jdata["Data"]["MiniGameFishingBaitData"].ToString());
-                    this.DataVersion.MiniGameFishingBaitData = dataVersion.MiniGameFishingBaitData;
-                }
-                if (jdata["Data"]["EnglishLanguageData"] != null)
-                {
-                    this.SetData(DataName.EnglishLanguageData, jdata["Data"]["EnglishLanguageData"].ToString());
-                    this.DataVersion.EnglishLanguageData = dataVersion.EnglishLanguageData;
-                }
-                if (jdata["Data"]["MiniGameForestGameData"] != null)
-                {
-                    this.SetData(DataName.MiniGameForestGameData, jdata["Data"]["MiniGameForestGameData"].ToString());
-                    this.DataVersion.MiniGameForestGameData = dataVersion.MiniGameForestGameData;
-                }
-                if (jdata["Data"]["PlayerChestDataHolder"] != null)
-                {
-                    this.SetData(DataName.PlayerChestDataHolder, jdata["Data"]["PlayerChestDataHolder"].ToString());
-                    this.DataVersion.PlayerChestDataHolder = dataVersion.PlayerChestDataHolder;
+                    this.SetData(DataName.DataScoopTiny, jdata["Data"]["DataScoopTiny"].ToString());
+                    this.DataVersion.DataScoopTiny = dataVersion.DataScoopTiny;
                 }
                 this.SetData(DataName.DataVersion, JsonUtility.ToJson(this.DataVersion));
                 this.CheckVersionDone = true;

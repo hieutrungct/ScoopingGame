@@ -14,23 +14,7 @@ namespace Rubik.Config
     {
         public const string Login_Screen = "Login";
         public const string Home_Screen = "Home";
-        public const string MiniGame01 = "MiniGame01";
-        public const string MiniGame02 = "MiniGame02";
-        public const string MiniGame03 = "MiniGame03";
-        public const string MiniGame04 = "MiniGame04";
-        public const string MiniGame05 = "MiniGame05";
-        public const string MiniGame06 = "MiniGame06";
-        public const string City_Screen = "City";
-        public const string Restaurant_Screen = "Restaurant";
-        public const string CityLand = "CityLand";
         public const string Loading_Screen = "Loading";
-        public const string Waiting_Room = "WaitingRoom";
-        public const string ChangeCharacter = "ChangeCharacter";
-        public const string MiniGameForestGame = "MiniGameForestGame";
-        public const string MiniGameGuessNumber = "MiniGameGuessNumber";
-        public const string MiniGameFishing = "Park";
-        public const string MiniGameJumping = "MinigameJumping";
-        public const string MiniGameDrawing = "Drawing";
     }
 
     public class SceneController : NTBehaviour
