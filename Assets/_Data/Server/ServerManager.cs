@@ -194,6 +194,8 @@ namespace Rubik.Manager
         public void AutoLogin()
         {
             NTLog.LogMessage("AutoLogin");
+            this.LoginByDeviceID(true);
+            return;
             if (AccountManager.Instance.IsAutoLogin() && AccountManager.Instance.GetToken() != "")
             {
                 this.LoginByToken();
