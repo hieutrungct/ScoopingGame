@@ -9,12 +9,6 @@ namespace Rubik.ScoopingGame
         Tiny_2 = 2,
         Tiny_3 = 3,
         Tiny_4 = 4,
-        Tiny_5 = 5,
-        Tiny_6 = 6,
-        Tiny_7 = 7,
-        Tiny_8 = 8,
-        Tiny_9 = 9,
-        Tiny_10 = 10,
     }
 
     public enum RewardType
@@ -23,13 +17,6 @@ namespace Rubik.ScoopingGame
         Reward_1 = 1,
         Reward_2 = 2,
         Reward_3 = 3,
-        Reward_4 = 4,
-        Reward_5 = 5,
-        Reward_6 = 6,
-        Reward_7 = 7,
-        Reward_8 = 8,
-        Reward_9 = 9,
-        Reward_10 = 10,
     }
 
     [System.Serializable]
@@ -42,9 +29,15 @@ namespace Rubik.ScoopingGame
     [System.Serializable]
     public class TinyRewardData
     {
-        public TinyType TinyType;
-        public int RequiredTinyAmount;
+        public TinyRequiredRewardData[] TinyRequiredRewardData;
         public RewardType RewardType;
+    }
+
+    [System.Serializable]
+    public class TinyRequiredRewardData
+    {
+        public TinyType TinyType;
+        public int RequiredRewardAmount;
     }
 
     [System.Serializable]
