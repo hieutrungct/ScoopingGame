@@ -27,6 +27,13 @@ namespace Rubik.ScoopingGame
     }
 
     [System.Serializable]
+    public class TinyNumberData
+    {
+        public TinyType TinyType;
+        public int Number;
+    }
+
+    [System.Serializable]
     public class TinyRewardData
     {
         public TinyRequiredRewardData[] TinyRequiredRewardData;
@@ -46,6 +53,7 @@ namespace Rubik.ScoopingGame
         public int Version;
         public List<TinyRateData> TinyRateData;
         public List<TinyRewardData> TinyRewardData;
+        public List<PoolTinyData> PoolTinyData;
     }
 
     [System.Serializable]
@@ -57,8 +65,15 @@ namespace Rubik.ScoopingGame
     [System.Serializable]
     public class UserScoopTinySession
     {
-        public string _id;
+        public int TotalRate = 0;
         public List<TinyRateData> PoolTiny;
         public List<TinyType> HoldTiny;
+    }
+
+    [System.Serializable]
+    public class PoolTinyData
+    {
+        public int Type;
+        public List<TinyNumberData> TinyNumberData;
     }
 }
