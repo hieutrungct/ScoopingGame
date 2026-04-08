@@ -147,7 +147,8 @@ namespace Rubik.Manager
                     // Change to Home Screen
                     yield return SceneController.Instance.LoadScreenProgress(SceneConfig.MiniGameScooping_Screen);
                 // }
-
+                // Login Success
+                // yield return SceneController.Instance.LoadScreenProgress(SceneConfig.Login_Screen);
 
                 EventListenerManager.instance.PostEvent(EventCode.BattleDeck_DoneLoad, new LoadingData(DoneLoad / MaxLoad, Lean.Localization.LeanLocalization.GetTranslationText("loading_done", "Loading")));
 
@@ -195,8 +196,6 @@ namespace Rubik.Manager
         public void AutoLogin()
         {
             NTLog.LogMessage("AutoLogin");
-            this.LoginByDeviceID(true);
-            return;
             if (AccountManager.Instance.IsAutoLogin() && AccountManager.Instance.GetToken() != "")
             {
                 this.LoginByToken();
@@ -207,7 +206,7 @@ namespace Rubik.Manager
                 PopupManager.Instance.OffUI(PopupCode.LoadingUI);
             }
         }
-
+    
         public void GameStart()
         {
             NTLog.LogMessage("GameStart");

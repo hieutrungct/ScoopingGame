@@ -347,6 +347,14 @@ MonoBehaviour:
     LoadingType: 0
     FakeLoadingTime: 2
     Backgrounds: []
+  - SceneName: MiniGameScooping
+    SceneAsset: {fileID: 102900000, guid: 21e7bacb17aa147439e2356728503513, type: 3}
+    DisplayName: MiniGameScooping
+    Description: 
+    SkipType: 3
+    LoadingType: 0
+    FakeLoadingTime: 2
+    Backgrounds: []
   tipsList:
   - Create beautiful loading screens for improved your game
   - Easy to use and implement
