@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using NTPackage.Functions;
@@ -65,13 +66,16 @@ namespace Rubik.ScoopingGame
             });
         }
 
-        public IEnumerator ScoopTiny(int number){
+        public IEnumerator ScoopTiny(int number, Action<ScoopTinyResult> done = null){
             JSONNode jdata = new JSONObject();
             jdata["userID"] = UserDataManager.Instance.GetUserID();
             jdata["number"] = number;
             yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + ScoopTinyConfig.API_ScoopTiny_InviteScoopTinyFriend, (data) =>
             {
-                ServerManager.instance.APIResponse(data.downloadHandler.text);
+                APIResponseData apiResponseData = ServerManager.instance.APIResponse(data.downloadHandler.text);
+                if(apiResponseData.Status == 1){
+                    done?.Invoke(apiResponseData.ScoopTinyResult);
+                }
             });
         }
 
