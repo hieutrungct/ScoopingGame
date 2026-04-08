@@ -72,16 +72,15 @@ namespace Rubik.UserData
             this.UserData.Level = userDataResponse.Level;
             this.UserData.Exp = userDataResponse.Exp;
             this.UserData.LastLogin = userDataResponse.LastLogin;
-            this.UserData.Server = userDataResponse.Server;
-            this.UserData.PlayerID = userDataResponse.PlayerID;
-            this.UserData.Level = userDataResponse.Level;
-            this.UserData.Exp = userDataResponse.Exp;
-            this.UserData.LastLogin = userDataResponse.LastLogin;
         }
 
         public void UpdateName(DisplayNameData nameData)
         {
-
+            if(nameData == null || nameData.DisplayeName.Length == 0){
+                return;
+            }
+            this.UserData.DisplayName = nameData.DisplayeName;
+            this.UserData.FirstChangeName = nameData.FirstChange;
         }
 
         public string GetUserID()

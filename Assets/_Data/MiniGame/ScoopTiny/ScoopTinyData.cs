@@ -64,6 +64,7 @@ namespace Rubik.ScoopingGame
     [System.Serializable]
     public class UserScoopTinySession
     {
+        public string _id;
         public List<TinyRateData> PoolTiny;
         public List<TinyType> HoldTiny;
     }

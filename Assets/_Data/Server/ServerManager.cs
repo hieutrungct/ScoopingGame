@@ -39,6 +39,7 @@ namespace Rubik.Manager
         public string Error;
         
         public UserDataResponse UserDataResponse;
+        public DisplayNameData Update_DisplayName;
         public UserScoopTiny ScoopTiny;
 
         public long TimeServer;
@@ -317,6 +318,7 @@ namespace Rubik.Manager
             #region Stream Update
             // Update User Data Response
             UserDataManager.Instance.UpdateUserData(apiResponseData.UserDataResponse);
+            UserDataManager.Instance.UpdateName(apiResponseData.Update_DisplayName);
             #endregion
             #region Normal Update
             // Update Scoop Tiny
