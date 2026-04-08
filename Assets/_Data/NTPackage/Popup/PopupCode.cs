@@ -48,5 +48,6 @@ namespace NTPackage.UI
         PlayerChestUI,
         PlayerChestSelectUI,
         LeaderboardUIController,
+        Popup_Login,
     }
 }

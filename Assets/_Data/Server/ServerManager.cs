@@ -115,8 +115,7 @@ namespace Rubik.Manager
             }
             else
             {
-                PopupManager.Instance.OffUI(PopupCode.LoginPanel);
-                PopupManager.Instance.OffUI(PopupCode.RegisterPanel);
+                PopupManager.Instance.OffUI(PopupCode.Popup_Login);
                 // Join Server
                 EventListenerManager.instance.PostEvent(EventCode.BattleDeck_DoneLoad, new LoadingData(JoinSever / MaxLoad, Lean.Localization.LeanLocalization.GetTranslationText("loading_join_server", "Join Sever")));
                 int login_result = -1;
@@ -202,7 +201,7 @@ namespace Rubik.Manager
             }
             else
             {
-                PopupManager.Instance.OnUI(PopupCode.LoginPanel);
+                PopupManager.Instance.OnUI(PopupCode.Popup_Login);
                 PopupManager.Instance.OffUI(PopupCode.LoadingUI);
             }
         }
@@ -229,7 +228,7 @@ namespace Rubik.Manager
                     StartCoroutine(Play());
                 else
                 {
-                    PopupManager.Instance.OnUI(PopupCode.LoginPanel);
+                    PopupManager.Instance.OnUI(PopupCode.Popup_Login);
                     PopupManager.Instance.OffUI(PopupCode.LoadingUI);
                 }
             }));
@@ -246,7 +245,7 @@ namespace Rubik.Manager
                 }
                 else
                 {
-                    PopupManager.Instance.OnUI(PopupCode.LoginPanel);
+                    PopupManager.Instance.OnUI(PopupCode.Popup_Login);
                     PopupManager.Instance.OffUI(PopupCode.LoadingUI);
                 }
             });
@@ -263,7 +262,7 @@ namespace Rubik.Manager
                 }
                 else
                 {
-                    PopupManager.Instance.OnUI(PopupCode.LoginPanel);
+                    PopupManager.Instance.OnUI(PopupCode.Popup_Login);
                     PopupManager.Instance.OffUI(PopupCode.LoadingUI);
                 }
             }));
@@ -282,7 +281,7 @@ namespace Rubik.Manager
                 }
                 else
                 {
-                    PopupManager.Instance.OnUI(PopupCode.LoginPanel);
+                    PopupManager.Instance.OnUI(PopupCode.Popup_Login);
                     PopupManager.Instance.OffUI(PopupCode.LoadingUI);
                     done?.Invoke(authenResponse);
                 }

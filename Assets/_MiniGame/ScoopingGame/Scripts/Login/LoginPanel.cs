@@ -5,7 +5,7 @@ using Rubik.Manager;
 using TMPro;
 using UnityEngine;
 
-public class Login : PopupUI
+public class LoginPanel : MonoBehaviour
 {
     public string Username;
     public string Password;

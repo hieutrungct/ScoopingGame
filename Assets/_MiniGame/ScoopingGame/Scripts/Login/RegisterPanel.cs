@@ -5,7 +5,7 @@ using Rubik.Manager;
 using TMPro;
 using UnityEngine;
 
-public class Register : PopupUI
+public class RegisterPanel : MonoBehaviour
 {
     public TMP_InputField userNameInput, passwordInput, repasswordInput;
     public TextMeshProUGUI textError;
