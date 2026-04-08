@@ -770,15 +770,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2577992507935911646, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2577992507935911646, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2577992507935911646, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2577992507935911646, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -842,23 +842,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3577064583473493937, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3577064583473493937, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3577064583473493937, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3691947612021806994, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 42.700012
       objectReference: {fileID: 0}
+    - target: {fileID: 4273319003300525823, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273319003300525823, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273319003300525823, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2037471775}
+    - target: {fileID: 4273319003300525823, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273319003300525823, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClickLogin
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273319003300525823, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LoginPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273319003300525823, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 4480151984227413442, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5019815116624318643, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1408,9 +1436,10 @@ MonoBehaviour:
     Version: 0
     TinyRateData: []
     TinyRewardData: []
+    PoolTinyData: []
   UserScoopTiny:
     Normal:
-      _id: 
+      TotalRate: 0
       PoolTiny: []
       HoldTiny: 
 --- !u!1 &1242241175
@@ -2410,6 +2439,17 @@ MonoBehaviour:
   Error: 
   AuthCode: 
   AccessToken: 
+--- !u!114 &2037471775 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 802740482802935176, guid: fde3779da3be4ee498b5893569c2d7bd, type: 3}
+  m_PrefabInstance: {fileID: 906158031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ccd536b93639f489a67c5c8ad99a8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2130242508
 GameObject:
   m_ObjectHideFlags: 0

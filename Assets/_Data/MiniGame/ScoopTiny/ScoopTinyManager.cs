@@ -20,8 +20,8 @@ namespace Rubik.ScoopingGame
 
     public class ScoopTinyManager : NTBehaviour
     {
-        public ScoopTinyData ScoopTinyData;
-        public UserScoopTiny UserScoopTiny;
+        [SerializeField] private ScoopTinyData ScoopTinyData;
+        [SerializeField]private UserScoopTiny UserScoopTiny;
 
         public static ScoopTinyManager Instance;
         protected override void Awake()
@@ -88,6 +88,14 @@ namespace Rubik.ScoopingGame
                 ServerManager.instance.APIResponse(data.downloadHandler.text);
             });
         }
+        #endregion
+
+        #region Getter
+        public ScoopTinyData GetScoopTinyData(){
+            return this.ScoopTinyData;
+        }
+
+        
         #endregion
     }
 }
