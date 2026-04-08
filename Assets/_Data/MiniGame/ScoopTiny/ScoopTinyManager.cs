@@ -1,11 +1,23 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using NTPackage.Functions;
+using Rubik.Config;
 using Rubik.DataCenter;
+using Rubik.Manager;
+using Rubik.UserData;
+using SimpleJSON;
 using UnityEngine;
 
 namespace Rubik.ScoopingGame
 {
+    public class ScoopTinyConfig
+    {
+        public const string API_ScoopTiny_OpenScoopTiny = "/api/multiplayer/scoop_tiny/open_scoop_tiny";
+        public const string API_ScoopTiny_ScoopTiny = "/api/multiplayer/scoop_tiny/scoop_tiny";
+        public const string API_ScoopTiny_InviteScoopTinyFriend = "/api/multiplayer/scoop_tiny/invite_scoop_tiny_friend";
+    }
+
     public class ScoopTinyManager : NTBehaviour
     {
         public ScoopTinyData ScoopTinyData;
@@ -41,6 +53,40 @@ namespace Rubik.ScoopingGame
                 return;
             }
             this.UserScoopTiny = userScoopTiny;
+        }
+        #endregion
+
+        #region API
+        public IEnumerator OpenScoopTiny(){
+            JSONNode jdata = new JSONObject();
+            jdata["userID"] = UserDataManager.Instance.GetUserID();
+            yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + ScoopTinyConfig.API_ScoopTiny_OpenScoopTiny, (data) =>
+            {
+                ServerManager.instance.APIResponse(data.downloadHandler.text);
+            });
+        }
+
+        public IEnumerator ScoopTiny(int number, Action<ScoopTinyResult> done = null){
+            JSONNode jdata = new JSONObject();
+            jdata["userID"] = UserDataManager.Instance.GetUserID();
+            jdata["number"] = number;
+            yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + ScoopTinyConfig.API_ScoopTiny_InviteScoopTinyFriend, (data) =>
+            {
+                APIResponseData apiResponseData = ServerManager.instance.APIResponse(data.downloadHandler.text);
+                if(apiResponseData.Status == 1){
+                    done?.Invoke(apiResponseData.ScoopTinyResult);
+                }
+            });
+        }
+
+        public IEnumerator InviteScoopTinyFriend(long friendID){
+            JSONNode jdata = new JSONObject();
+            jdata["userID"] = UserDataManager.Instance.GetUserID();
+            jdata["friendID"] = friendID;
+            yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + ScoopTinyConfig.API_ScoopTiny_InviteScoopTinyFriend, (data) =>
+            {
+                ServerManager.instance.APIResponse(data.downloadHandler.text);
+            });
         }
         #endregion
     }

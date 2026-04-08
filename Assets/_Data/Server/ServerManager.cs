@@ -41,6 +41,7 @@ namespace Rubik.Manager
         public UserDataResponse UserDataResponse;
         public DisplayNameData Update_DisplayName;
         public UserScoopTiny ScoopTiny;
+        public ScoopTinyResult ScoopTinyResult;
 
         public long TimeServer;
     }

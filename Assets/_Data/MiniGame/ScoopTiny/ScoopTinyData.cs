@@ -76,4 +76,10 @@ namespace Rubik.ScoopingGame
         public int Type;
         public List<TinyNumberData> TinyNumberData;
     }
+
+    [System.Serializable]
+    public class ScoopTinyResult
+    {
+        public List<TinyType> ListScoopTiny;
+    }
 }
