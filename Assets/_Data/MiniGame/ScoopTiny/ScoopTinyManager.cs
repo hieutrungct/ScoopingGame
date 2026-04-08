@@ -1,11 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using NTPackage.Functions;
+using Rubik.Config;
 using Rubik.DataCenter;
+using SimpleJSON;
 using UnityEngine;
 
 namespace Rubik.ScoopingGame
 {
+    public class ScoopTinyConfig
+    {
+        public const string API_ScoopTiny_OpenScoopTiny = "/api/multiplayer/scoop_tiny/open_scoop_tiny";
+        public const string API_ScoopTiny_ScoopTiny = "/api/multiplayer/scoop_tiny/scoop_tiny";
+    }
+
     public class ScoopTinyManager : NTBehaviour
     {
         public ScoopTinyData ScoopTinyData;
@@ -41,6 +49,26 @@ namespace Rubik.ScoopingGame
                 return;
             }
             this.UserScoopTiny = userScoopTiny;
+        }
+        #endregion
+
+        #region API
+        public IEnumerator OpenScoopTiny(){
+            JSONNode jdata = new JSONObject();
+            jdata["data"] = JsonUtility.ToJson(this.UserScoopTiny);
+            yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + ScoopTinyConfig.API_ScoopTiny_OpenScoopTiny, (data) =>
+            {
+                jdata = JSONNode.Parse(data.downloadHandler.text);
+            });
+        }
+
+        public IEnumerator ScoopTiny(){
+            JSONNode jdata = new JSONObject();
+            jdata["data"] = JsonUtility.ToJson(this.UserScoopTiny);
+            yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + ScoopTinyConfig.API_ScoopTiny_ScoopTiny, (data) =>
+            {
+                jdata = JSONNode.Parse(data.downloadHandler.text);
+            });
         }
         #endregion
     }
