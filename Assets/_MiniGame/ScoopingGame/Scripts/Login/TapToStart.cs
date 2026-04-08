@@ -5,6 +5,6 @@ public class TapToStart : MonoBehaviour
 {
     public void OnTapToStart()
     {
-        ServerManager.instance.GameStart();
+        ServerManager.instance.TapToStart();
     }
 }
