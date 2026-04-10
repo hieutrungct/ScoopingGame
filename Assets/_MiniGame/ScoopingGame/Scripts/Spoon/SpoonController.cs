@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using NTPackage.Functions;
 using UnityEngine;
 
 namespace Rubik.ScoopingGame
@@ -10,7 +11,7 @@ namespace Rubik.ScoopingGame
         [SerializeField] private CatchZone catchZone;
 
 
-        public List<BlindBag> lsBlindBag = new List<BlindBag>();
+        public List<TinyType> lsBlindBag = new List<TinyType>();
 
         public void StartScooping()
         {
@@ -22,8 +23,15 @@ namespace Rubik.ScoopingGame
                 onComplete: () =>
                 {
                     catchZone.DeactiveCatchZone();
-                    lsBlindBag = catchZone.caughtItems;
-                    GameController.instance.OnScoopingDone(lsBlindBag);
+                    int caughtItemCount = catchZone.caughtItems.Count;
+                    // GameController.instance.OnScoopingDone(lsBlindBag);
+                    // sau khi có dữ liệu rồi thì sẽ sửa lại chỗ này, hiện tại tạm thời sẽ giả lập bằng cách truyền dữ liệu từ catchzone sang
+                    ScoopTinyManager.Instance.StartCoroutine(ScoopTinyManager.Instance.ScoopTiny(caughtItemCount, (result) =>
+                    {
+                        NTLog.LogMessage("ScoopTiny done:"+JsonUtility.ToJson(result));
+                        catchZone.caughtItems.Clear();
+                    }));
+
                 }
             );
         }

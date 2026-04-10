@@ -17,6 +17,7 @@ namespace Rubik.ScoopingGame
         public BlindBagClassification blindBagClassification;
         public BlindBagFlyEffect blindBagFlyEffect;
         public CollectedItemsController collectedItemsController;
+        public CreatBindBag creatBindBag;
         #endregion
         
 
@@ -41,7 +42,7 @@ namespace Rubik.ScoopingGame
         {
 
             // giả lập reward 
-            var rewards = SimulateRewards(items.Count);
+            List<ItemData> rewards = SimulateRewards(items.Count);
 
             unboxingController.ShowUnboxingUI(); 
             blindBagClassification.ShowClassificationUI();

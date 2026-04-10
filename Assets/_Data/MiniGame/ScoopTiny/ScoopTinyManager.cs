@@ -48,7 +48,7 @@ namespace Rubik.ScoopingGame
         public void UpdateUserScoopTiny(UserScoopTiny userScoopTiny){
             if(userScoopTiny == null || userScoopTiny.Normal == null 
             || userScoopTiny.Normal.PoolTiny == null || userScoopTiny.Normal.HoldTiny == null
-            || userScoopTiny.Normal.PoolTiny.Count == 0 || userScoopTiny.Normal.HoldTiny.Count == 0
+            ||( userScoopTiny.Normal.PoolTiny.Count == 0 && userScoopTiny.Normal.HoldTiny.Count == 0)
             ){
                 return;
             }
@@ -57,20 +57,23 @@ namespace Rubik.ScoopingGame
         #endregion
 
         #region API
-        public IEnumerator OpenScoopTiny(){
+        public IEnumerator OpenScoopTiny(Action done){
             JSONNode jdata = new JSONObject();
-            jdata["userID"] = UserDataManager.Instance.GetUserID();
+            jdata["userId"] = UserDataManager.Instance.GetUserID();
             yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + ScoopTinyConfig.API_ScoopTiny_OpenScoopTiny, (data) =>
             {
-                ServerManager.instance.APIResponse(data.downloadHandler.text);
+                APIResponseData aPIResponseData = ServerManager.instance.APIResponse(data.downloadHandler.text);
+                if(aPIResponseData.Status == 1){
+                    done?.Invoke();
+                }
             });
         }
 
         public IEnumerator ScoopTiny(int number, Action<ScoopTinyResult> done = null){
             JSONNode jdata = new JSONObject();
-            jdata["userID"] = UserDataManager.Instance.GetUserID();
+            jdata["userId"] = UserDataManager.Instance.GetUserID();
             jdata["number"] = number;
-            yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + ScoopTinyConfig.API_ScoopTiny_InviteScoopTinyFriend, (data) =>
+            yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + ScoopTinyConfig.API_ScoopTiny_ScoopTiny, (data) =>
             {
                 APIResponseData apiResponseData = ServerManager.instance.APIResponse(data.downloadHandler.text);
                 if(apiResponseData.Status == 1){
@@ -81,7 +84,7 @@ namespace Rubik.ScoopingGame
 
         public IEnumerator InviteScoopTinyFriend(long friendID){
             JSONNode jdata = new JSONObject();
-            jdata["userID"] = UserDataManager.Instance.GetUserID();
+            jdata["userId"] = UserDataManager.Instance.GetUserID();
             jdata["friendID"] = friendID;
             yield return Rubik.Server.APIManager.Instance.PostDataUrl(jdata.ToString(), URL_Config.BASE_API_URL + ScoopTinyConfig.API_ScoopTiny_InviteScoopTinyFriend, (data) =>
             {

@@ -454,7 +454,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5793157154929773098}
-        m_TargetAssemblyTypeName: Register, Assembly-CSharp
+        m_TargetAssemblyTypeName: RegisterPanel, Assembly-CSharp
         m_MethodName: RegisterOnclick
         m_Mode: 1
         m_Arguments:
@@ -585,7 +585,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8915385913328203013}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 802740482802935176}
+        m_TargetAssemblyTypeName: LoginPanel, Assembly-CSharp
+        m_MethodName: OnClickLogin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2053693884282415135
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,7 +653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4053926076176519640
 RectTransform:
   m_ObjectHideFlags: 0
@@ -940,7 +952,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.6, y: 278.8}
+  m_AnchoredPosition: {x: 2.6, y: 203}
   m_SizeDelta: {x: 824.4151, y: 128.62308}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3960544382699886202
@@ -1490,7 +1502,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2.6, y: 118.5}
+  m_AnchoredPosition: {x: 2.6, y: 42.700012}
   m_SizeDelta: {x: 824.4151, y: 128.62308}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8630403745179274287
@@ -1850,9 +1862,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5793157154929773098}
-        m_TargetAssemblyTypeName: Register, Assembly-CSharp
-        m_MethodName: BackToLogin
+      - m_Target: {fileID: 8843869907908320061}
+        m_TargetAssemblyTypeName: Popup_Login, Assembly-CSharp
+        m_MethodName: ShowPanelLogin
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1955,7 +1967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4361226931341945567
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2129,7 +2141,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c560a04dcfd860e45b04eb0729aa9c62, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 22b6171c43ead6148872c426bc7e3773, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5817,9 +5829,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 802740482802935176}
-        m_TargetAssemblyTypeName: Login, Assembly-CSharp
-        m_MethodName: OnclickSignUp
+      - m_Target: {fileID: 8843869907908320061}
+        m_TargetAssemblyTypeName: Popup_Login, Assembly-CSharp
+        m_MethodName: ShowPanelRegister
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

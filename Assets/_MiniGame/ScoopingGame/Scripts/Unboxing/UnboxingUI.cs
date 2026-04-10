@@ -106,5 +106,27 @@ namespace Rubik.ScoopingGame
             transform.DOKill();
             gameObject.SetActive(false);
         }
+        public void SkipToReward(ItemData item, Action onOpened)
+        {
+            transform.DOKill();
+
+            fullBag.gameObject.SetActive(false);
+            topPart.gameObject.SetActive(true);
+            bottomPart.gameObject.SetActive(true);
+            flash.gameObject.SetActive(true);
+            flash.color = new Color(1,1,1,0);
+            reward.gameObject.SetActive(true);
+            reward.SetUp(item);
+
+            Sequence seq = DOTween.Sequence();
+            seq.Append(flash.DOFade(0.5f, 0.2f));
+            seq.Append(flash.DOFade(0, 0.2f));
+            seq.Append(reward.transform.DOScale(1f, 0.3f).SetEase(Ease.OutBack));
+
+            seq.OnComplete(() =>
+            {
+                onOpened?.Invoke();
+            });
+        }
     }
 }

@@ -5,7 +5,7 @@ namespace Rubik.ScoopingGame
     public class CatchZone : MonoBehaviour
     {
         public List<BlindBag> caughtItems = new List<BlindBag>();
-        
+        public Transform holdPoint;
         public void ActiveCatchZone()
         {
             GetComponent<Collider2D>().enabled = true;
@@ -46,7 +46,6 @@ namespace Rubik.ScoopingGame
         }
         void AttachItems(List<BlindBag> items)
         {
-            var holdPoint = GameController.instance.spoonController.spoonUI.transform;
             foreach (var item in items)
             {
                 item.AttachToSpoon(holdPoint);

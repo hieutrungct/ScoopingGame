@@ -61,7 +61,7 @@ namespace Rubik.UserData
 
         public void UpdateUserData(UserDataResponse userDataResponse)
         {
-            if(userDataResponse == null || userDataResponse._id.Length == 0){
+            if(userDataResponse == null || userDataResponse._id == null || userDataResponse._id.Length == 0){
                 return;
             }
             this.UserData = new UserData();

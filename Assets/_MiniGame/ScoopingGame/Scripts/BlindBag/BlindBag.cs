@@ -5,6 +5,7 @@ namespace Rubik.ScoopingGame
     {
         public string id;
         public SpriteRenderer icon;
+        public TinyType tinyType;
         public bool isGrabbed;
         public void SetUp()
         {
