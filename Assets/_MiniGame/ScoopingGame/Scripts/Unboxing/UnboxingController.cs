@@ -29,10 +29,7 @@ namespace Rubik.ScoopingGame
                 isOpened = true;
             });
         }
-        public void ShowUnboxingUI()
-        {
-            unboxingUI.gameObject.SetActive(true);
-        }
+        
 
         public void Collect()
         {

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ namespace Rubik.ScoopingGame
         [SerializeField] private GameObject vfxPrefab;
         [SerializeField] private Image flash;
         [SerializeField] private RewardItem reward;
+        [SerializeField] private List<SlotBlindBag> slotBlindBag;
 
         private Vector3 initialTopPartPosition;
         private Vector3 initialBottomPartPosition;

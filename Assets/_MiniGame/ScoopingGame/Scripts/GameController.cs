@@ -43,11 +43,8 @@ namespace Rubik.ScoopingGame
 
             // giả lập reward 
             List<ItemData> rewards = SimulateRewards(items.Count);
-
-            unboxingController.ShowUnboxingUI(); 
+ 
             blindBagClassification.ShowClassificationUI();
-
-            // classification.gameObject.SetActive(true);
 
             unboxingController.Init(rewards); 
         }

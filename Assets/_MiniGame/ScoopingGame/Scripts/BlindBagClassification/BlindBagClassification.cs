@@ -17,7 +17,7 @@ namespace Rubik.ScoopingGame
                 {
                     Sprite itemIcon = DataAssets.instance.loadImage.IconItems[(int)classifiedItem.rarity];
                     inventoryItemTarget = GameController.instance.collectedItemsController.GetInventoryItemTarget(classifiedItem.rarity);
-                    bf.FlyEffect(classifiedItem.transform, classifiedItem.number, inventoryItemTarget, itemIcon);
+                    bf.ItemFlyEffect(classifiedItem.transform, classifiedItem.number, inventoryItemTarget, itemIcon);
                 }
             }
             StartCoroutine(HideClassificationUI());
