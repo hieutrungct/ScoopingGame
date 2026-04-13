@@ -8,7 +8,7 @@ namespace Rubik.ScoopingGame
     public class SpoonController : MonoBehaviour
     {
         public SpoonUI spoonUI;
-        [SerializeField] private CatchZone catchZone;
+        public CatchZone catchZone;
 
 
         public List<TinyType> lsBlindBag = new List<TinyType>();
@@ -28,8 +28,10 @@ namespace Rubik.ScoopingGame
                     // sau khi có dữ liệu rồi thì sẽ sửa lại chỗ này, hiện tại tạm thời sẽ giả lập bằng cách truyền dữ liệu từ catchzone sang
                     ScoopTinyManager.Instance.StartCoroutine(ScoopTinyManager.Instance.ScoopTiny(caughtItemCount, (result) =>
                     {
-                        NTLog.LogMessage("ScoopTiny done:"+JsonUtility.ToJson(result));
+                        NTLog.LogMessage("ScoopTiny done:" + JsonUtility.ToJson(result));
+                        GameController.instance.OnScoopingDone(caughtItemCount);
                         catchZone.caughtItems.Clear();
+                        catchZone.ClearScoop();
                     }));
 
                 }

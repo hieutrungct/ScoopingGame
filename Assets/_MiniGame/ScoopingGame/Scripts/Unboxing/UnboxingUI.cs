@@ -18,6 +18,11 @@ namespace Rubik.ScoopingGame
         private Vector3 initialTopPartPosition;
         private Vector3 initialBottomPartPosition;
 
+        void Start()
+        {
+            initialTopPartPosition = topPart.position;
+            initialBottomPartPosition = bottomPart.position;
+        }
         public void Init()
         {
             initialTopPartPosition = topPart.position;
@@ -27,10 +32,8 @@ namespace Rubik.ScoopingGame
 
         public void ResetUI()
         {
-            transform.DOKill();
-
             vfxPrefab.SetActive(false);
-            fullBag.gameObject.SetActive(true);
+            fullBag.gameObject.SetActive(false);
             topPart.gameObject.SetActive(false);
             bottomPart.gameObject.SetActive(false);
             flash.gameObject.SetActive(false);
@@ -39,17 +42,58 @@ namespace Rubik.ScoopingGame
             topPart.position = initialTopPartPosition;
             bottomPart.position = initialBottomPartPosition;
 
-            fullBag.DOMoveY(0, 0.5f)
-                .From(new Vector3(0, 500, 0))
-                .SetEase(Ease.OutCubic)
-                .OnComplete(() => vfxPrefab.SetActive(true));
+            foreach (var slot in slotBlindBag)
+            {
+                slot.gameObject.SetActive(false);
+            }
+
+            // fullBag.DOMoveY(0, 0.5f)
+            //     .From(new Vector3(0, 500, 0))
+            //     .SetEase(Ease.OutCubic)
+            //     .OnComplete(() => vfxPrefab.SetActive(true));
+        }
+
+        public void ShowBlindBagSelection(Transform startPos, List<ItemData> rewards)
+        {
+            
+            for (int i = 0; i < slotBlindBag.Count; i++)
+            {
+                if (i < rewards.Count)
+                {
+                    slotBlindBag[i].Init(i);
+                    Sprite itemIcon = DataAssets.instance.loadImage.IconBlindBags[0]; // Giả sử tất cả blind bag đều có cùng 1 icon, có thể thay đổi sau
+                    GameController.instance.blindBagFlyEffect.BlindBagFlyEffects(startPos, slotBlindBag[i].transform, itemIcon);
+                }
+            }
+        }
+
+        public void HideSlot(int index)
+        {
+            if (index >= 0 && index < slotBlindBag.Count)
+            {
+                slotBlindBag[index].gameObject.SetActive(false);
+            }
         }
 
         public void PlayOpen(ItemData item, Action onOpened)
         {
-            transform.DOKill();
+            vfxPrefab.SetActive(false);
+            fullBag.gameObject.SetActive(false);
+            topPart.gameObject.SetActive(false);
+            bottomPart.gameObject.SetActive(false);
+            flash.gameObject.SetActive(false);
+            reward.gameObject.SetActive(false);
 
+            topPart.position = initialTopPartPosition;
+            bottomPart.position = initialBottomPartPosition;
+
+            transform.DOKill();
             Sequence seq = DOTween.Sequence();
+            fullBag.gameObject.SetActive(true);
+            seq.Append(fullBag.DOMoveY(0, 0.5f)
+                .From(new Vector3(0, 500, 0))
+                .SetEase(Ease.OutCubic)
+                .OnComplete(() => vfxPrefab.SetActive(true)));
 
             // Shake
             seq.Append(fullBag.DOShakeScale(0.5f, 0.1f));

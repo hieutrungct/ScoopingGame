@@ -38,14 +38,12 @@ namespace Rubik.ScoopingGame
         }
         
         
-        public void OnScoopingDone(List<BlindBag> items)
+        public void OnScoopingDone(int caughtItemCount)
         {
 
             // giả lập reward 
-            List<ItemData> rewards = SimulateRewards(items.Count);
+            List<ItemData> rewards = SimulateRewards(caughtItemCount);
  
-            blindBagClassification.ShowClassificationUI();
-
             unboxingController.Init(rewards); 
         }
         

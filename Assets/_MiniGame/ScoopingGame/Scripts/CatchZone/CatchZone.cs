@@ -51,5 +51,12 @@ namespace Rubik.ScoopingGame
                 item.AttachToSpoon(holdPoint);
             }
         }
+        public void ClearScoop()
+        {
+            foreach (Transform child in holdPoint)
+            {
+                Destroy(child.gameObject);
+            }
+        }
     }
 }
