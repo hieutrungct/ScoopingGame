@@ -2,6 +2,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using System;
 namespace Rubik.ScoopingGame
 {
     public class BlindBagFlyEffect : MonoBehaviour
@@ -10,7 +11,7 @@ namespace Rubik.ScoopingGame
         public Canvas canvas;
         public float duration = 1f;
         
-        public void ItemFlyEffect(Transform startPos, int coinCount, Transform targetUI, Sprite itemIcon)
+        public void ItemFlyEffect(Transform startPos, int coinCount, Transform targetUI, Sprite itemIcon, Action onComplete)
         {
             
             transform.DOKill();
@@ -22,13 +23,13 @@ namespace Rubik.ScoopingGame
                 coin.SetUpImage(itemIcon);
                 coin.transform.localScale = Vector3.zero;
 
-                float delay = Random.Range(0f, 0.7f);
+                float delay = UnityEngine.Random.Range(0f, 0.7f);
                 
-                Vector3 burstPos = startPos.position + (Vector3)Random.insideUnitCircle * 1f; 
+                Vector3 burstPos = startPos.position + (Vector3)UnityEngine.Random.insideUnitCircle * 1f; 
                 
                 Vector3 midPoint = Vector3.Lerp(burstPos, targetUI.position, 0.5f) + new Vector3(
-                    Random.Range(-0.3f, 0.3f), 
-                    Random.Range(0.3f, 0.6f), 
+                    UnityEngine.Random.Range(-0.3f, 0.3f), 
+                    UnityEngine.Random.Range(0.3f, 0.6f), 
                     0
                 );
 
@@ -54,6 +55,7 @@ namespace Rubik.ScoopingGame
                     targetUI.DOPunchScale(new Vector3(0.1f, 0.1f, 0.1f), 0.1f);
                     
                     coin.StopTrailAndDisconnect(); // Stop the trail effect and disconnect it from the coin
+                    onComplete?.Invoke();
 
                     Destroy(coin.gameObject);
                 });
@@ -66,12 +68,12 @@ namespace Rubik.ScoopingGame
             blindBag.SetUpImage(itemIcon);
             blindBag.transform.localScale = Vector3.zero;
 
-            float delay = Random.Range(0f, 0.2f);
+            float delay = UnityEngine.Random.Range(0f, 0.2f);
 
-            Vector3 burstPos = startPos.position + (Vector3)Random.insideUnitCircle * 1f; 
+            Vector3 burstPos = startPos.position + (Vector3)UnityEngine.Random.insideUnitCircle * 1f; 
             Vector3 midPoint = Vector3.Lerp(burstPos, targetUI.position, 0.5f) + new Vector3(
-                    Random.Range(-0.1f, 0.1f), 
-                    Random.Range(0.1f, 0.2f), 
+                    UnityEngine.Random.Range(-0.1f, 0.1f), 
+                    UnityEngine.Random.Range(0.1f, 0.2f), 
                     0
                 );
 
@@ -94,7 +96,7 @@ namespace Rubik.ScoopingGame
             seq.Join(blindBag.transform.DOScale(1.2f, duration/2).SetEase(Ease.InQuad));
 
             // rotate nhẹ cho đẹp
-            seq.Join(blindBag.transform.DORotate(new Vector3(0, 0, Random.Range(-45, 45)), duration/2));
+            seq.Join(blindBag.transform.DORotate(new Vector3(0, 0, UnityEngine.Random.Range(-45, 45)), duration/2));
 
             seq.OnComplete(() =>
             {

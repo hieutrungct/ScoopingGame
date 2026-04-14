@@ -6,6 +6,6 @@ namespace Rubik.ScoopingGame
     {
         public string id;
         
-        public Rarity rarity;
+        public TinyType rarity;
     }
 }

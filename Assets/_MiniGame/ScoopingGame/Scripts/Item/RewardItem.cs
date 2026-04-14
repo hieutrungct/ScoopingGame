@@ -5,12 +5,11 @@ namespace Rubik.ScoopingGame
     public class RewardItem : MonoBehaviour
     {
         public Image icon;
-        public Rarity rarity;
-        public void SetUp(ItemData itemData)
+        public TinyType tinyType;
+        public void SetUp(TinyType tiny)
         {
             transform.localScale = Vector3.one;
-            this.rarity = itemData.rarity;
-            icon.sprite = DataAssets.instance.loadImage.IconItems[(int)rarity];
+            icon.sprite = DataAssets.instance.loadImage.IconItems[(int)tiny];
         }
         
     }

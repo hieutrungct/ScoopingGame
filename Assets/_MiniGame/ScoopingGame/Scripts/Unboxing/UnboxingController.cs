@@ -6,12 +6,12 @@ namespace Rubik.ScoopingGame
     {
         [SerializeField] private UnboxingUI unboxingUI;
         
-        private List<ItemData> items;
+        private List<TinyType> items;
         [SerializeField] private bool[] opened;
         private int selectedIndex;
         public bool isOpened;
 
-        public void Init(List<ItemData> rewards)
+        public void Init(List<TinyType> rewards)
         {
             items = rewards;
             opened = new bool[rewards.Count];
@@ -41,7 +41,16 @@ namespace Rubik.ScoopingGame
             unboxingUI.PlayOpen(items[selectedIndex], () =>
             {
                 isOpened = false;
+
+                GameController.instance.blindBagClassification.ClassifyItems(items[selectedIndex]);
+                opened[selectedIndex] = true;
+                if (AllOpened())
+                {
+                    unboxingUI.HideAll();
+                    GameController.instance.blindBagClassification.ClassifyItemsIntoCollectedItems();
+                }
             });
+
         }
         
 
@@ -53,7 +62,9 @@ namespace Rubik.ScoopingGame
             {
                 GameController.instance.blindBagClassification.ClassifyItems(items[selectedIndex]);
                 opened[selectedIndex] = true;
-                
+
+                // Debug.Log($"Collected item: {items[selectedIndex].id} with rarity {items[selectedIndex].rarity}");
+
                 selectedIndex = -1;
                 isOpened = false;
 

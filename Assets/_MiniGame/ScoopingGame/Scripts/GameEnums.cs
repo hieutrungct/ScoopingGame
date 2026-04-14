@@ -5,12 +5,12 @@ namespace Rubik
     {
         
     }
-    public enum Rarity
-    {
-        Common,
-        Uncommon,
-        Rare,
-        Epic,
-        Legendary
-    }
+    // public enum Rarity
+    // {
+    //     Common,
+    //     Uncommon,
+    //     Rare,
+    //     Epic,
+    //     Legendary
+    // }
 }

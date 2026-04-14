@@ -97,7 +97,10 @@ namespace Rubik.ScoopingGame
         public ScoopTinyData GetScoopTinyData(){
             return this.ScoopTinyData;
         }
-
+        public UserScoopTiny GetUserData()
+        {
+            return this.UserScoopTiny;
+        }
         
         #endregion
     }

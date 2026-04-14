@@ -5,13 +5,13 @@ namespace Rubik.ScoopingGame
     public class CollectedItemsUI : MonoBehaviour
     {
         public List<ItemInventory> lsItemInventory;
-        public void SetUp(ItemData items)
+        public void SetUp(TinyType tinyType)
         {
             lsItemInventory.ForEach(inventory =>
             {
-                if (inventory.rarity == items.rarity)
+                if (inventory.tinyType == tinyType)
                 {
-                    inventory.SetUp(items);
+                    inventory.SetUp();
                 }
             });
         }

@@ -25,11 +25,11 @@ namespace Rubik.ScoopingGame
                     catchZone.DeactiveCatchZone();
                     int caughtItemCount = catchZone.caughtItems.Count;
                     // GameController.instance.OnScoopingDone(lsBlindBag);
-                    // sau khi có dữ liệu rồi thì sẽ sửa lại chỗ này, hiện tại tạm thời sẽ giả lập bằng cách truyền dữ liệu từ catchzone sang
                     ScoopTinyManager.Instance.StartCoroutine(ScoopTinyManager.Instance.ScoopTiny(caughtItemCount, (result) =>
                     {
-                        NTLog.LogMessage("ScoopTiny done:" + JsonUtility.ToJson(result));
-                        GameController.instance.OnScoopingDone(caughtItemCount);
+                        // NTLog.LogMessage("ScoopTiny done:" + JsonUtility.ToJson(result));
+                        // lsBlindBag = result?.ListScoopTiny ?? new List<TinyType>();
+                        GameController.instance.OnScoopingDone(result);
                         catchZone.caughtItems.Clear();
                         catchZone.ClearScoop();
                     }));

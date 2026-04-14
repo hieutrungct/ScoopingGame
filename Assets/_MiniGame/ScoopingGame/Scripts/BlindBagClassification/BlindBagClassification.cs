@@ -15,16 +15,19 @@ namespace Rubik.ScoopingGame
             {
                 if (classifiedItem.number > 0)
                 {
-                    Sprite itemIcon = DataAssets.instance.loadImage.IconItems[(int)classifiedItem.rarity];
-                    inventoryItemTarget = GameController.instance.collectedItemsController.GetInventoryItemTarget(classifiedItem.rarity);
-                    bf.ItemFlyEffect(classifiedItem.transform, classifiedItem.number, inventoryItemTarget, itemIcon);
+                    Sprite itemIcon = DataAssets.instance.loadImage.IconItems[(int)classifiedItem.tinyType];
+                    inventoryItemTarget = GameController.instance.collectedItemsController.GetInventoryItemTarget(classifiedItem.tinyType);
+                    bf.ItemFlyEffect(classifiedItem.transform, classifiedItem.number, inventoryItemTarget, itemIcon, () =>
+                    {
+                        GameController.instance.collectedItemsController.UpdateInventoryItems(classifiedItem.tinyType);
+                    });
                 }
             }
             StartCoroutine(HideClassificationUI());
         }
-        public void ClassifyItems(ItemData items)
+        public void ClassifyItems(TinyType tiny)
         {
-            blindBagClassificationUI.ClassifyItemsText(items);
+            blindBagClassificationUI.ClassifyItemsText(tiny);
         }
         public void ShowClassificationUI()
         {
@@ -34,7 +37,9 @@ namespace Rubik.ScoopingGame
         {
             yield return new WaitForSeconds(1f);
             blindBagClassificationUI.gameObject.SetActive(false);
+            blindBagClassificationUI.ResetClassification();
         }
+
 
     }
 }

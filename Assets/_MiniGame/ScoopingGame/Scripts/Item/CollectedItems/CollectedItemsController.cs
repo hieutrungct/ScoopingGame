@@ -4,16 +4,16 @@ namespace Rubik.ScoopingGame
 {
     public class CollectedItemsController : MonoBehaviour
     {
-        public CollectedItemsUI collectedItemsUI;
-        public void UpdateInventoryItems(ItemData items)
+        [SerializeField] private CollectedItemsUI collectedItemsUI;
+        public void UpdateInventoryItems(TinyType tinyType)
         {
-            collectedItemsUI.SetUp(items);
+            collectedItemsUI.SetUp(tinyType);
         }
-        public Transform GetInventoryItemTarget(Rarity rarity)
+        public Transform GetInventoryItemTarget(TinyType tinyType)
         {
             foreach (var inventory in collectedItemsUI.lsItemInventory)
             {
-                if (inventory.rarity == rarity)
+                if (inventory.tinyType == tinyType)
                 {
                     return inventory.itemCountText.transform;
                 }

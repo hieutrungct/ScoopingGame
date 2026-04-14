@@ -40,7 +40,7 @@ namespace Rubik.ScoopingGame
                                 gameObject.SetActive(false);
                             });
 
-                        NTLog.LogMessage("SlotBlindBag clicked: " + slotIndex);
+                        // NTLog.LogMessage("SlotBlindBag clicked: " + slotIndex);
                     }
                 });
             }

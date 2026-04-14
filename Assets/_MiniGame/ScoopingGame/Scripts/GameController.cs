@@ -38,29 +38,38 @@ namespace Rubik.ScoopingGame
         }
         
         
-        public void OnScoopingDone(int caughtItemCount)
-        {
+        // public void OnScoopingDone(int caughtItemCount)
+        // {
+        //     // Giữ lại method cũ để tránh lỗi nếu có chỗ khác vẫn gọi.
 
-            // giả lập reward 
-            List<ItemData> rewards = SimulateRewards(caughtItemCount);
- 
-            unboxingController.Init(rewards); 
+        //     List<ItemData> rewards = SimulateRewards(caughtItemCount);
+        //     blindBagClassification.ShowClassificationUI();
+        //     unboxingController.Init(rewards);
+        // }
+
+        public void OnScoopingDone(ScoopTinyResult scoopTinyResult)
+        {
+            List<TinyType> rewards = scoopTinyResult.ListScoopTiny;
+            blindBagClassification.ShowClassificationUI();
+            unboxingController.Init(rewards);
         }
         
         // hiện tại chưa có dữ liệu từ client nên tạm thời sẽ giả lập bằng cách random dữ liệu blindbag, sau này có dữ liệu rồi thì sẽ sửa lại
-        private List<ItemData> SimulateRewards(int count)
-        {
-            List<ItemData> list = new List<ItemData>();
+        // private List<ItemData> SimulateRewards(int count)
+        // {
+        //     List<ItemData> list = new List<ItemData>();
 
-            for (int i = 0; i < count; i++)
-            {
-                ItemData b = new ItemData();
-                b.id = System.Guid.NewGuid().ToString();
-                b.rarity = (Rarity)Random.Range(1, 4);
-                list.Add(b);
-            }
+        //     for (int i = 0; i < count; i++)
+        //     {
+        //         ItemData b = new ItemData();
+        //         b.id = System.Guid.NewGuid().ToString();
+        //         b.rarity = (Rarity)Random.Range(1, 4);
+        //         list.Add(b);
+        //     }
 
-            return list;
-        }
+        //     return list;
+        // }
+        
+        
     }
 }

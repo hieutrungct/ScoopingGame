@@ -20,7 +20,7 @@ public class ScaleScreen : MonoBehaviour
     {
         var x = Screen.width;
         var y = Screen.height;
-        scaleValue=((float)x/y)/((float)1080/1920);
+        scaleValue=((float)x/y)/((float)1920/1080);
         ss.matchWidthOrHeight = (int)(scaleValue);
     }
 }

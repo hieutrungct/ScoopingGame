@@ -4,7 +4,7 @@ namespace Rubik.ScoopingGame
 {
     public class ClassifiedItems : MonoBehaviour
     {
-        public Rarity rarity;
+        public TinyType tinyType;
         public RectTransform position;
         public TextMeshProUGUI numberText;
         public int number;

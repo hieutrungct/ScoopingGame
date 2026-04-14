@@ -25,9 +25,11 @@ namespace Rubik.ScoopingGame
         }
         public void Init()
         {
-            initialTopPartPosition = topPart.position;
-            initialBottomPartPosition = bottomPart.position;
             ResetUI();
+            foreach (var slot in slotBlindBag)
+            {
+                slot.gameObject.SetActive(false);
+            }
         }
 
         public void ResetUI()
@@ -42,18 +44,13 @@ namespace Rubik.ScoopingGame
             topPart.position = initialTopPartPosition;
             bottomPart.position = initialBottomPartPosition;
 
-            foreach (var slot in slotBlindBag)
-            {
-                slot.gameObject.SetActive(false);
-            }
-
             // fullBag.DOMoveY(0, 0.5f)
             //     .From(new Vector3(0, 500, 0))
             //     .SetEase(Ease.OutCubic)
             //     .OnComplete(() => vfxPrefab.SetActive(true));
         }
 
-        public void ShowBlindBagSelection(Transform startPos, List<ItemData> rewards)
+        public void ShowBlindBagSelection(Transform startPos, List<TinyType> rewards)
         {
             
             for (int i = 0; i < slotBlindBag.Count; i++)
@@ -75,17 +72,9 @@ namespace Rubik.ScoopingGame
             }
         }
 
-        public void PlayOpen(ItemData item, Action onOpened)
+        public void PlayOpen(TinyType item, Action onOpened)
         {
-            vfxPrefab.SetActive(false);
-            fullBag.gameObject.SetActive(false);
-            topPart.gameObject.SetActive(false);
-            bottomPart.gameObject.SetActive(false);
-            flash.gameObject.SetActive(false);
-            reward.gameObject.SetActive(false);
-
-            topPart.position = initialTopPartPosition;
-            bottomPart.position = initialBottomPartPosition;
+            ResetUI();
 
             transform.DOKill();
             Sequence seq = DOTween.Sequence();
@@ -152,7 +141,7 @@ namespace Rubik.ScoopingGame
             transform.DOKill();
             gameObject.SetActive(false);
         }
-        public void SkipToReward(ItemData item, Action onOpened)
+        public void SkipToReward(TinyType tiny, Action onOpened)
         {
             transform.DOKill();
 
@@ -162,7 +151,7 @@ namespace Rubik.ScoopingGame
             flash.gameObject.SetActive(true);
             flash.color = new Color(1,1,1,0);
             reward.gameObject.SetActive(true);
-            reward.SetUp(item);
+            reward.SetUp(tiny);
 
             Sequence seq = DOTween.Sequence();
             seq.Append(flash.DOFade(0.5f, 0.2f));

@@ -9,8 +9,8 @@ namespace Rubik.ScoopingGame
         [SerializeField] private Button redeemReward_btn;
         [SerializeField] private int itemCount;
         public Image itemIcon;
-        public Rarity rarity;
-        public void SetUp(ItemData items)
+        public TinyType tinyType;
+        public void SetUp()
         {
             itemCount++;
             itemCountText.text = itemCount.ToString();
